@@ -1,0 +1,94 @@
+.genres {
+  margin-top: 32px;
+  margin-bottom: 72px;
+}
+
+.genres__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Rubik", "Arial", sans-serif;
+  color: #333333;
+}
+
+.genres__list {
+  @include list-reset;
+  display: flex;
+}
+
+.genres__item {
+  width: 280px;
+  height: 208px;
+  margin-right: 20px;
+  // background: linear-gradient(127.83deg, rgba(242, 201, 76, 0.8) 8.44%, rgba(242, 154, 74, 0.8) 91.36%);
+  border-radius: 6px;
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.15);
+}
+
+.genres__item--comedy {
+  background: linear-gradient(127.83deg, rgba(242, 201, 76, 0.8) 8.44%, rgba(242, 154, 74, 0.8) 91.36%);
+}
+
+.genres__item--comedy:hover {
+  background: linear-gradient(127.83deg, rgba(242, 201, 76, 1) 8.44%, rgba(242, 154, 74, 1) 91.36%);
+}
+
+.genres__item--drama {
+  background: linear-gradient(127.83deg, rgba(242, 153, 74, 0.8) 8.44%, rgba(235, 87, 87, 0.8) 91.36%);
+}
+
+.genres__item--drama:hover {
+  background: linear-gradient(127.83deg, rgba(242, 153, 74, 1) 8.44%, rgba(235, 87, 87, 1) 91.36%);
+}
+
+.genres__item--fantastic {
+  background: linear-gradient(127.83deg, rgba(86, 204, 242, 0.8) 8.44%, rgba(47, 128, 237, 0.8) 91.36%);
+}
+
+.genres__item--fantastic:hover {
+  background: linear-gradient(127.83deg, rgba(86, 204, 242, 1) 8.44%, rgba(47, 128, 237, 1) 91.36%);
+}
+
+.genres__item--horrors {
+  background: linear-gradient(127.83deg, rgba(130, 130, 130, 0.8) 8.44%, rgba(51, 51, 51, 0.8) 91.36%);
+}
+
+.genres__item--horrors:hover {
+  background: linear-gradient(127.83deg, rgba(130, 130, 130, 1) 8.44%, rgba(51, 51, 51, 1) 91.36%);
+}
+
+.genres__item:last-child {
+  margin-right: 0;
+}
+
+.genres__link {
+  position: relative;
+  display: block;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+}
+
+.genres__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 48px;
+  line-height: 57px;
+  transform: translate(-50%, -50%);
+}
+
+.genres__name {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Rubik", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+}

@@ -5,917 +5,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Главная</title>
+  <title>Видеосервис: Главная</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="slick/slick-theme.css">
-  <link rel="stylesheet" href="slick/slick.css">
 </head>
 
 <body>
 
-  <div class="wrapper">
+<header class="header">
 
-    <header class="header">
+  <div class="container container--flex">
 
-      <div class="header__wrapper">
-
-        <div class="header__top">
-          <div class="container">
-            <div class="header__top-wrapper">
-              <a class="header__logo logo">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/icon-logo-mobile.svg">
-                  <img class="logo__image" src="img/icon-logo.svg" width="189" height="50"
-                    alt="Логотип сайта Прогресс.">
-                </picture>
-              </a>
-              <div class="header__shedule schedule">
-                <svg class="shedule__icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                  xmlns="http://www.w3.org/2000/svg" title="Иконка календаря.">
-                  <path
-                    d="M17.1818 1.63636H12.5455V0.818182C12.5455 0.366327 12.1791 0 11.7273 0C11.2754 0 10.9091 0.366327 10.9091 0.818182V1.63636H7.09091V0.818182C7.09091 0.366327 6.72458 0 6.27273 0C5.82087 0 5.45455 0.366327 5.45455 0.818182V1.63636H0.818182C0.366327 1.63636 0 2.00269 0 2.45455V4.90909H18V2.45455C18 2.00269 17.6337 1.63636 17.1818 1.63636Z"
-                    fill="#AB2420" />
-                  <path
-                    d="M0 17.1818C0 17.6336 0.366327 18 0.818182 18H17.1818C17.6337 18 18 17.6336 18 17.1818V6.54541H0V17.1818ZM5.96695 10.876C6.28642 10.5565 6.80449 10.5565 7.12402 10.876L8.18182 11.9338L10.876 9.23963C11.1955 8.9201 11.7136 8.9201 12.0331 9.23963C12.3526 9.55916 12.3526 10.0771 12.0331 10.3967L8.76038 13.6694C8.60062 13.8291 8.39122 13.909 8.18182 13.909C7.97242 13.909 7.76302 13.8291 7.60331 13.6694L5.96695 12.033C5.64736 11.7135 5.64736 11.1955 5.96695 10.876Z"
-                    fill="#AB2420" />
-                </svg>
-                <div class="shedule__wrapper">
-                  <p class="schedule-title">График работы:</p>
-                  <p class="schedule-info">Ежедневно: с 9-00 до 19-00</p>
-                </div>
-              </div>
-              <div class="header__phone phone modal__link--messages">
-                <svg class="phone__icon" width="19" height="18" viewBox="0 0 19 18" fill="none"
-                  xmlns="http://www.w3.org/2000/svg" tittle="Иконка телефона.">
-                  <path
-                    d="M17.9978 14.702C18.0443 15.3337 17.808 15.9151 17.335 16.3374C16.1298 17.4109 14.5719 18 12.9518 18C11.1845 18 9.52573 17.3141 8.27783 16.0661L1.93353 9.72563C-0.53519 7.25691 -0.655394 3.27672 1.66224 0.66842C2.08461 0.195629 2.66217 -0.0408417 3.2977 0.00578633C3.92945 0.0522631 4.47203 0.370031 4.82084 0.900955L6.79345 3.90453C7.26639 4.62545 7.22763 5.56331 6.69277 6.23382C6.23542 6.81122 6.2819 7.63675 6.80132 8.15602L9.85137 11.2023C10.3706 11.7216 11.2001 11.7682 11.7736 11.3108C12.448 10.776 13.3819 10.7333 14.1068 11.21L17.1104 13.1828C17.6336 13.5276 17.9513 14.0702 17.9978 14.702Z"
-                    fill="#AB2420" />
-                </svg>
-                <a class="phone__link" href="tel:+79624460997">8 962 446 09 97</a>
-              </div>
-              <div class="header__toggle toggle">
-                <svg class="header__toggle-icon" width="32" height="21" title="Иконка телефона" viewBox="0 0 32 21"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="32" height="3" fill="#AD2320" />
-                  <rect y="9" width="32" height="3" fill="#AD2320" />
-                  <rect y="18" width="32" height="3" fill="#AD2320" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="header__bottom">
-          <div class="container">
-            <div class="header__bottom-wrapper">
-              <nav class="header__navigation navigation">
-                <ul class="navigation__list">
-                  <li class="navigation__item navigation__item--toggle">
-                    <a class="navigation__link navigation__link--toggle" href="#">Каталог услуг
-                      <svg class="navigation__icon" width="12" height="8" viewBox="0 0 12 8" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect y="1.41422" width="2" height="8" transform="rotate(-45 0 1.41422)" fill="#AD2320" />
-                        <rect x="9.89948" width="2" height="8" transform="rotate(45 9.89948 0)" fill="#AD2320" />
-                      </svg>
-                    </a>
-                    <ul class="navigation__list navigation__list--inner">
-                      <li class="navigation__item">
-                        <a class="navigation__link" href="index.html">Жалюзи</a>
-                      </li>
-                      <li class="navigation__item">
-                        <a class="navigation__link" href="curtains.html">Рулонные шторы</a>
-                      </li>
-                      <li class="navigation__item">
-                        <a class="navigation__link" href="shutters.html">Рольставни</a>
-                      </li>
-                      <li class="navigation__item">
-                        <a class="navigation__link" href="gates.html">Ворота</a>
-                      </li>
-                      <li class="navigation__item">
-                        <a class="navigation__link" href="automation.html">Автоматика</a>
-                      </li>
-                      <li class="navigation__item">
-                        <a class="navigation__link" href="#">Шлагбаумы</a>
-                      </li>
-                      <li class="navigation__item">
-                        <a class="navigation__link" href="video.html">Видеонаблюдение</a>
-                      </li>
-                      <li class="navigation__item">
-                        <a class="navigation__link" href="windows.html">Окна</a>
-                      </li>
-                      <li class="navigation__item">
-                        <a class="navigation__link" href="aluminum.html">Алюминевые конструкции</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" href="#">Калькулятор</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" href="reviews.html">Видео отзывы</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" href="about.html">О компании</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" href="contacts.html">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="header__decorative"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="header__promo promo promo--jalousie">
-          <div class="container">
-            <div class="promo__wrapper">
-              <h1 class="promo__title">Изготовим жалюзи под Ваш бюджет за 48 часов!</h1>
-              <div class="promo__modal modal">
-                <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-                  <h2 class="form__title">Подарки для новых клиентов</h2>
-                  <label class="form__phone" for="phone-field-one">
-                    <input class="form__field form__phone-field" type="tel" name="phone" id="phone-field-one"
-                      placeholder="Номер телефона" required>
-                  </label>
-                  <label class="form__name" for="name-field-one">
-                    <input class="form__field form__name-field" type="text" name="name" id="name-field-one"
-                      placeholder="Ваше имя" required>
-                  </label>
-                  <button class="form__button button" type="submit" title="Кнопка отправить.">Хочу подарок</button>
-                  <div class="form__agreement-wrapper">
-                    <label class="form__agreement" for="agreement-field-one">
-                      <input class="form__agreement-field visually-hidden" type="checkbox" name="agreement"
-                        id="agreement-field-one" checked required>
-                      <span class="form__check">
-                        <svg class="form__check-icon" width="14" height="10" viewBox="0 0 14 10" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <rect y="4.30768" width="1.523" height="7.61498" transform="rotate(-45 0 4.30768)"
-                            fill="#AD2320" />
-                          <rect x="12.9231" width="1.523" height="12.184" transform="rotate(45 12.9231 0)"
-                            fill="#AD2320" />
-                        </svg>
-                      </span>
-                    </label>
-                    <p class="form__agreement-info">Даю согласие на обработку моих данных,<br> в соответствии с <a
-                        class="form__agreement-link" href="#" target="_blank">Пользовательским соглашением</a></p>
-                  </div>
-                </form>
-              </div>
-              <a class="header__order button modal__link--recall" href="#">Подарки новым клиентам</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </header>
-
-    <main class="main">
-
-      <section class="achievements">
-        <div class="container">
-          <div class="achievements__wrapper">
-            <ul class="achievements__list slider-achievements">
-              <li class="achievements__item">
-                <svg class="achievements__icon" width="85" height="100" viewBox="0 0 85 100" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M82.2219 11.8912L42.9969 0.123633C42.4482 -0.0412109 41.8625 -0.0412109 41.3133 0.123633L2.08789 11.8912C0.848633 12.2629 0 13.4035 0 14.6973V57.8449C0 63.457 2.27187 69.202 6.75254 74.9201C10.1748 79.2873 14.9092 83.6727 20.8244 87.9545C30.7613 95.1475 40.5461 99.56 40.9578 99.7441C41.3387 99.9146 41.7467 100 42.1549 100C42.5629 100 42.9711 99.9148 43.352 99.7441C43.7637 99.56 53.5482 95.1475 63.4852 87.9545C69.4002 83.6727 74.1346 79.2873 77.5568 74.9201C82.0375 69.2021 84.3094 63.4572 84.3094 57.8449V14.6973C84.3096 13.4035 83.4611 12.2629 82.2219 11.8912ZM78.4502 57.8449C78.4502 67.7769 68.4848 77.0898 60.1248 83.1537C52.6299 88.5898 45.0289 92.4473 42.1551 93.833C39.2812 92.4473 31.6801 88.5898 24.1852 83.1537C15.825 77.0898 5.85937 67.7769 5.85937 57.8449V16.877L42.1549 5.98828L78.4502 16.877V57.8449Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M50.3913 31.304L44.0553 30.856C40.0873 30.856 38.0179 31.3893 37.8473 32.456C37.2499 35.272 36.9086 37.768 36.8233 39.944C36.8233 40.3707 36.9726 40.584 37.2713 40.584C37.3566 40.584 37.4846 40.5413 37.6553 40.456C39.1913 39.6453 40.9619 39.24 42.9673 39.24C44.9726 39.24 46.7646 39.5387 48.3433 40.136C49.9646 40.7333 51.2233 41.544 52.1193 42.568C53.0153 43.592 53.7619 44.6373 54.3593 45.704C54.9993 46.728 55.4473 47.88 55.7033 49.16C56.0446 51.208 56.2153 52.9147 56.2153 54.28C56.2153 58.8027 54.9779 62.5787 52.5033 65.608C50.0713 68.5947 46.5939 70.088 42.0713 70.088H41.8793C37.9113 70.088 34.6899 69.32 32.2153 67.784C29.7833 66.248 28.5673 63.9227 28.5673 60.808C28.5673 59.3147 28.7806 58.0133 29.2073 56.904C29.6766 55.7947 30.2313 54.984 30.8713 54.472C32.1939 53.4053 33.3886 52.8293 34.4553 52.744L35.0953 52.68C36.0766 52.68 37.0153 52.9147 37.9113 53.384C38.8073 53.8107 39.2553 54.472 39.2553 55.368C39.2553 55.7093 39.0206 56.072 38.5513 56.456C38.0819 56.7973 37.6766 57.3307 37.3353 58.056C36.9939 58.7387 36.8019 59.3147 36.7593 59.784L36.6313 60.552C36.6313 61.704 36.8233 62.6853 37.2073 63.496C37.5913 64.264 38.0819 64.776 38.6793 65.032C39.6606 65.5013 40.4926 65.736 41.1753 65.736C42.6686 65.736 43.9059 65.2453 44.8873 64.264C45.9113 63.24 46.6153 61.96 46.9993 60.424C47.5539 58.0347 47.8313 56.1787 47.8313 54.856C47.8313 47.56 45.7833 43.912 41.6873 43.912C39.1699 43.912 37.1433 45.064 35.6073 47.368C35.3939 48.0933 34.4766 48.456 32.8553 48.456C31.2339 48.456 30.4233 48.1147 30.4233 47.432V47.176C31.3619 41.672 32.1299 34.248 32.7273 24.904C32.8553 24.52 33.1539 24.2853 33.6233 24.2C35.3726 24.1147 37.3353 24.072 39.5113 24.072L46.8713 24.2C50.7966 24.2 53.1646 24.0293 53.9753 23.688C54.1459 23.6027 54.3379 23.56 54.5513 23.56C54.9779 23.56 55.1913 23.7733 55.1913 24.2C55.1913 25.3947 54.6793 26.888 53.6553 28.68C52.6739 30.4293 51.5859 31.304 50.3913 31.304Z"
-                    fill="#AD2320" />
-                </svg>
-                <p class="achievements__text">5 лет<br> на рынке</p>
-              </li>
-              <li class="achievements__item">
-                <svg class="achievements__icon" width="85" height="100" viewBox="0 0 85 100" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M82.2219 11.8912L42.9969 0.123633C42.4482 -0.0412109 41.8625 -0.0412109 41.3133 0.123633L2.08789 11.8912C0.848633 12.2629 0 13.4035 0 14.6973V57.8449C0 63.457 2.27187 69.202 6.75254 74.9201C10.1748 79.2873 14.9092 83.6727 20.8244 87.9545C30.7613 95.1475 40.5461 99.56 40.9578 99.7441C41.3387 99.9146 41.7467 100 42.1549 100C42.5629 100 42.9711 99.9148 43.352 99.7441C43.7637 99.56 53.5482 95.1475 63.4852 87.9545C69.4002 83.6727 74.1346 79.2873 77.5568 74.9201C82.0375 69.2021 84.3094 63.4572 84.3094 57.8449V14.6973C84.3096 13.4035 83.4611 12.2629 82.2219 11.8912ZM78.4502 57.8449C78.4502 67.7769 68.4848 77.0898 60.1248 83.1537C52.6299 88.5898 45.0289 92.4473 42.1551 93.833C39.2812 92.4473 31.6801 88.5898 24.1852 83.1537C15.825 77.0898 5.85937 67.7769 5.85937 57.8449V16.877L42.1549 5.98828L78.4502 16.877V57.8449Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M25.7891 33.8868C20.9425 33.8868 17 37.8293 17 42.6759H34.5782C34.5782 37.8293 30.6357 33.8868 25.7891 33.8868Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M17 45.6056V48.5353H24.3242C25.1339 48.5353 25.7891 49.1905 25.7891 50.0001C25.7891 50.8098 25.1339 51.465 24.3242 51.465H17V54.3947H24.3242C25.1339 54.3947 25.7891 55.0499 25.7891 55.8595C25.7891 56.6692 25.1339 57.3244 24.3242 57.3244H17V61.8166C17 62.6256 17.6559 63.2814 18.4648 63.2814H34.5782V45.6056H17Z"
-                    fill="#AD2320" />
-                  <path d="M46.2969 51.465H43.3672V54.3947H46.2969V51.465Z" fill="#AD2320" />
-                  <path d="M52.1563 51.465H49.2266V54.3947H52.1563V51.465Z" fill="#AD2320" />
-                  <path d="M58.0158 51.465H55.0861V54.3947H58.0158V51.465Z" fill="#AD2320" />
-                  <path
-                    d="M66.5597 43.0936L57.5753 34.3045C57.1539 33.8922 56.5265 33.7728 55.9829 34.0013C55.4396 34.2299 55.0861 34.7621 55.0861 35.3516V40.6043L48.7976 34.3159C48.3788 33.8968 47.7485 33.7716 47.2012 33.9983C46.6539 34.2251 46.2969 34.7592 46.2969 35.3516V40.6043L40.0084 34.3159C39.5895 33.8968 38.9594 33.7715 38.4121 33.9983C37.8647 34.2251 37.5078 34.7592 37.5078 35.3516V42.6759V63.2814H65.5352C66.3442 63.2814 67.0001 62.6256 67.0001 61.8166V44.1407C67.0002 43.7466 66.8415 43.3691 66.5597 43.0936ZM60.9455 55.8595C60.9455 56.6685 60.2897 57.3244 59.4807 57.3244H41.9025C41.0935 57.3244 40.4376 56.6685 40.4376 55.8595V50.0001C40.4376 49.1911 41.0935 48.5353 41.9025 48.5353H59.4807C60.2897 48.5353 60.9455 49.1911 60.9455 50.0001V55.8595Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M61.1683 25H49.0043L48.1572 30.9753C49.1821 31.0661 50.1336 31.5083 50.8697 32.2448L52.4342 33.8093C52.85 32.6973 53.708 31.78 54.8468 31.3009C55.3899 31.0727 55.9628 30.9571 56.5506 30.9571C57.7064 30.9571 58.798 31.4022 59.6241 32.2104L62.6066 35.1281L61.1683 25Z"
-                    fill="#AD2320" />
-                </svg>
-                <p class="achievements__text">Производство<br> Алютех-Юг и Амиго</p>
-              </li>
-              <li class="achievements__item">
-                <svg class="achievements__icon" width="85" height="100" viewBox="0 0 85 100" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M82.2219 11.8912L42.9969 0.123633C42.4482 -0.0412109 41.8625 -0.0412109 41.3133 0.123633L2.08789 11.8912C0.848633 12.2629 0 13.4035 0 14.6973V57.8449C0 63.457 2.27187 69.202 6.75254 74.9201C10.1748 79.2873 14.9092 83.6727 20.8244 87.9545C30.7613 95.1475 40.5461 99.56 40.9578 99.7441C41.3387 99.9146 41.7467 100 42.1549 100C42.5629 100 42.9711 99.9148 43.352 99.7441C43.7637 99.56 53.5482 95.1475 63.4852 87.9545C69.4002 83.6727 74.1346 79.2873 77.5568 74.9201C82.0375 69.2021 84.3094 63.4572 84.3094 57.8449V14.6973C84.3096 13.4035 83.4611 12.2629 82.2219 11.8912ZM78.4502 57.8449C78.4502 67.7769 68.4848 77.0898 60.1248 83.1537C52.6299 88.5898 45.0289 92.4473 42.1551 93.833C39.2812 92.4473 31.6801 88.5898 24.1852 83.1537C15.825 77.0898 5.85937 67.7769 5.85937 57.8449V16.877L42.1549 5.98828L78.4502 16.877V57.8449Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M28.631 47.6093L20.6419 53.5992C16.2184 56.9206 15.764 63.3884 19.6707 67.2949C23.6311 71.2554 30.0044 70.8029 33.3664 66.3221L39.3561 58.3344L28.631 47.6093ZM32.0989 56.938L25.8847 63.1521C25.3125 63.7244 24.3856 63.7244 23.8133 63.1521C23.2412 62.58 23.2412 61.6529 23.8133 61.0807L30.0275 54.8666C30.5997 54.2944 31.5267 54.2944 32.0989 54.8666C32.6711 55.4387 32.6712 56.3658 32.0989 56.938Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M44.3512 50.8999L36.0628 42.6114C34.9571 41.5085 33.0387 41.4999 31.9186 42.6172C30.7823 43.7566 30.771 45.6037 31.9214 46.7571L40.2113 55.047C41.3397 56.1725 43.1871 56.2053 44.3541 55.0412C45.4927 53.8995 45.4993 52.0509 44.3512 50.8999Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M64.4531 55.0228C62.0377 52.6096 58.7627 51.7639 54.4395 53.2947L48.0221 47.229L46.4226 48.8285C48.1594 50.5676 48.5665 53.089 47.7024 55.1959L50.2967 57.4403C49.1548 60.6449 49.2042 63.8744 51.2198 66.5305C53.4299 69.4428 57.0624 70.5877 60.4301 69.7136C61.1786 69.519 61.4366 68.5787 60.8876 68.0297L58.6679 65.8101C58.3932 65.5354 58.3086 65.1628 58.3086 64.7742V62.3493C58.3086 61.7358 58.7364 61.2109 59.3499 61.2109H61.775C62.1633 61.2109 62.536 61.3926 62.8106 61.6673L65.0849 63.9416C65.6059 64.4626 66.5014 64.2256 66.6944 63.5113C67.505 60.5132 66.6844 57.2553 64.4531 55.0228Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M66.5707 23.0788L63.9212 20.4292C63.4754 19.9832 62.7944 19.8727 62.2304 20.1547L55.6976 23.4205C55.2012 23.6685 54.9073 24.1758 54.9073 24.7307V27.3628C54.9073 27.7512 54.753 28.1238 54.4783 28.3984L40.2084 42.6143L44.3512 46.7571L58.6015 32.5218C58.8762 32.2472 59.2488 32.0928 59.6372 32.0928H62.2693C62.8242 32.0928 63.3314 31.7986 63.5794 31.3024L66.8453 24.7696C67.1273 24.2057 67.0165 23.5245 66.5707 23.0788Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M33.6124 32.5281C34.7505 29.3306 34.7116 26.1016 32.6919 23.4381C30.7009 20.8129 27.4331 19.3929 23.6652 20.2493C22.8449 20.4361 22.5469 21.461 23.1445 22.0582L25.2424 24.1553C25.5173 24.4301 25.6915 24.8027 25.6915 25.1913V27.6223C25.6915 28.2333 25.1763 28.7891 24.5653 28.7891H22.1343C21.7458 28.7891 21.3731 28.5741 21.0985 28.2993L18.8772 26.0773C18.3309 25.531 17.3891 25.8002 17.2162 26.5563C16.5186 29.6098 17.5736 33.0593 19.456 34.9427C21.8949 37.3795 25.1718 38.1932 29.4711 36.6708L31.7835 39.2762C33.9904 38.3946 36.5134 38.9215 38.1313 40.5372L38.1371 40.543L39.7362 38.9438L33.6124 32.5281Z"
-                    fill="#AD2320" />
-                </svg>
-                <p class="achievements__text">Сервисный<br> центр</p>
-              </li>
-              <li class="achievements__item">
-                <svg class="achievements__icon" width="85" height="100" viewBox="0 0 85 100" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M82.2219 11.8912L42.9969 0.123633C42.4482 -0.0412109 41.8625 -0.0412109 41.3133 0.123633L2.08789 11.8912C0.848633 12.2629 0 13.4035 0 14.6973V57.8449C0 63.457 2.27187 69.202 6.75254 74.9201C10.1748 79.2873 14.9092 83.6727 20.8244 87.9545C30.7613 95.1475 40.5461 99.56 40.9578 99.7441C41.3387 99.9146 41.7467 100 42.1549 100C42.5629 100 42.9711 99.9148 43.352 99.7441C43.7637 99.56 53.5482 95.1475 63.4852 87.9545C69.4002 83.6727 74.1346 79.2873 77.5568 74.9201C82.0375 69.2021 84.3094 63.4572 84.3094 57.8449V14.6973C84.3096 13.4035 83.4611 12.2629 82.2219 11.8912ZM78.4502 57.8449C78.4502 67.7769 68.4848 77.0898 60.1248 83.1537C52.6299 88.5898 45.0289 92.4473 42.1551 93.833C39.2812 92.4473 31.6801 88.5898 24.1852 83.1537C15.825 77.0898 5.85937 67.7769 5.85937 57.8449V16.877L42.1549 5.98828L78.4502 16.877V57.8449Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M37.7025 23.88L47.4305 24.2C49.6492 24.2 51.4625 24.1147 52.8705 23.944L53.5745 23.816C54.2998 23.816 54.6625 24.6267 54.6625 26.248C54.6625 27.8693 54.3852 29.2987 53.8305 30.536C46.2358 42.696 42.4385 53.9387 42.4385 64.264C42.4385 66.2693 42.5878 67.5493 42.8865 68.104C43.2278 68.6587 43.3985 68.9573 43.3985 69C43.3985 69.768 42.2252 70.152 39.8785 70.152C35.6972 70.152 33.6065 69.3627 33.6065 67.784C33.6065 61.896 35.9318 54.5147 40.5825 45.64C45.2758 36.7653 47.6225 31.9867 47.6225 31.304C47.6225 30.9627 47.4518 30.7493 47.1105 30.664C45.6598 30.5787 44.3585 30.536 43.2065 30.536C42.0972 30.536 40.8385 30.6853 39.4305 30.984C38.0225 31.24 36.9132 31.5813 36.1025 32.008C34.4812 32.8187 33.4572 33.544 33.0305 34.184L32.7105 34.632C32.4118 35.144 32.0918 35.4 31.7505 35.4C31.2385 35.4 30.9825 35.016 30.9825 34.248C30.9825 27.848 31.7078 24.4987 33.1585 24.2C34.0118 23.9867 35.5265 23.88 37.7025 23.88Z"
-                    fill="#AD2320" />
-                </svg>
-                <p class="achievements__text">Гарантия<br> до 7 лет</p>
-              </li>
-              <li class="achievements__item">
-                <svg class="achievements__icon" width="85" height="100" viewBox="0 0 85 100" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M82.2219 11.8912L42.9969 0.123633C42.4482 -0.0412109 41.8625 -0.0412109 41.3133 0.123633L2.08789 11.8912C0.848633 12.2629 0 13.4035 0 14.6973V57.8449C0 63.457 2.27187 69.202 6.75254 74.9201C10.1748 79.2873 14.9092 83.6727 20.8244 87.9545C30.7613 95.1475 40.5461 99.56 40.9578 99.7441C41.3387 99.9146 41.7467 100 42.1549 100C42.5629 100 42.9711 99.9148 43.352 99.7441C43.7637 99.56 53.5482 95.1475 63.4852 87.9545C69.4002 83.6727 74.1346 79.2873 77.5568 74.9201C82.0375 69.2021 84.3094 63.4572 84.3094 57.8449V14.6973C84.3096 13.4035 83.4611 12.2629 82.2219 11.8912ZM78.4502 57.8449C78.4502 67.7769 68.4848 77.0898 60.1248 83.1537C52.6299 88.5898 45.0289 92.4473 42.1551 93.833C39.2812 92.4473 31.6801 88.5898 24.1852 83.1537C15.825 77.0898 5.85937 67.7769 5.85937 57.8449V16.877L42.1549 5.98828L78.4502 16.877V57.8449Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M48.5179 22H33.6961C32.1677 22 30.9286 23.2391 30.9286 24.7675V45.7146H27.7675C26.2391 45.7146 25 46.9537 25 48.4821C25 50.0105 26.2391 51.2496 27.7675 51.2496H30.9286V57.572H27.7675C26.2391 57.572 25 58.8111 25 60.3395C25 61.8679 26.2391 63.107 27.7675 63.107H30.9286V69.2325C30.9286 70.7609 32.1677 72 33.6961 72C35.2245 72 36.4637 70.7609 36.4637 69.2325V63.107H48.5179C50.0463 63.107 51.2854 61.8679 51.2854 60.3395C51.2854 58.8111 50.0463 57.572 48.5179 57.572H36.4637V51.2496H48.5179C56.5821 51.2496 63.1428 44.6889 63.1428 36.6247C63.1426 28.3613 56.4114 22 48.5179 22ZM48.5179 45.7146H36.4637V27.5351H48.5179C53.4998 27.5351 57.6077 31.5535 57.6077 36.6249C57.6076 41.6371 53.5301 45.7146 48.5179 45.7146Z"
-                    fill="#AD2320" />
-                </svg>
-                <p class="achievements__text">Возможен<br> кредит</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="goods">
-        <div class="container">
-          <div class="goods__wrapper">
-            <h2 class="goods__title">Жалюзи</h2>
-            <ul class="goods__list slider-goods">
-              <li class="goods__item">
-                <article class="product">
-                  <header class="product__header">
-                    <picture>
-                      <source srcset="img/jalousie-first.webp" type="image/webp">
-                      <img class="product__image" src="img/jalousie-first.jpg" width="411" height="260"
-                        alt="Продукт один.">
-                    </picture>
-                    <p class="product__installation">Установка +200 руб</p>
-                  </header>
-                  <div class="product__info">
-                    <span class="product__category">Жалюзи</span>
-                    <h3 class="product__name">Вертикальные</h3>
-                    <p class="product__cost">от 650 руб</p>
-                    <a class="product__order button modal__link--recall" href="#">Заказать</a>
-                  </div>
-                </article>
-              </li>
-              <li class="goods__item">
-                <article class="product">
-                  <header class="product__header">
-                    <picture>
-                      <source srcset="img/jalousie-second.webp" type="image/webp">
-                      <img class="product__image" src="img/jalousie-second.jpg" width="411" height="260"
-                        alt="Продукт два.">
-                    </picture>
-                    <p class="product__installation">Установка +250 руб</p>
-                  </header>
-                  <div class="product__info">
-                    <span class="product__category">Жалюзи</span>
-                    <h3 class="product__name">Горизонтальные</h3>
-                    <p class="product__cost">от 700 руб</p>
-                    <a class="product__order button modal__link--recall" href="#">Заказать</a>
-                  </div>
-                </article>
-              </li>
-              <li class="goods__item">
-                <article class="product">
-                  <header class="product__header">
-                    <picture>
-                      <source srcset="img/jalousie-third.webp" type="image/webp">
-                      <img class="product__image" src="img/jalousie-third.jpg" width="411" height="260"
-                        alt="Продукт три.">
-                    </picture>
-                    <p class="product__installation">Установка бесплатно</p>
-                  </header>
-                  <div class="product__info">
-                    <span class="product__category">Жалюзи</span>
-                    <h3 class="product__name">Плиссе</h3>
-                    <p class="product__cost">от 4 350 руб</p>
-                    <a class="product__order button modal__link--recall" href="#">Заказать</a>
-                  </div>
-                </article>
-              </li>
-            </ul>
-            <div class="product__slider slider">
-              <ul class="slider__list slider-products">
-                <li class="slider__item">
-                  <picture>
-                    <source srcset="img/slider-jalousie-first.webp" type="image/webp">
-                    <img class="slider__image" src="img/slider-jalousie-first.jpg" width="524" height="524"
-                      alt="Схема плессе.">
-                  </picture>
-                  <div class="slider__info">
-                    <h3 class="slider__title">Плессе</h3>
-                    <ul class="slider__info-list">
-                      <li class="slider__info-item">
-                        <dl class="slider__item-list">
-                          <dt class="slider__item-title">Крепление верхнее и нижнее</dt>
-                          <dd class="slider__item-text">
-                            <p class="slider__item-text-description">Это крепежный элемент на котором держится сама
-                              ткань
-                              жалюзи.
-                              Изготавливается из металла и алюминия.</p>
-                          </dd>
-                        </dl>
-                      </li>
-                      <li class="slider__info-item">
-                        <dl class="slider__item-list">
-                          <dt class="slider__item-title">Гофрированная ткань</dt>
-                          <dd class="slider__item-text">
-                            <p class="slider__item-text-description">Ткань - это по сути и есть то, из чего состоят
-                              жалюзи
-                              плиссе, эта
-                              ткань так же как и в рулонных шторах пропитана антистатическим средством и стойкая к
-                              выгоранию.</p>
-                          </dd>
-                        </dl>
-                      </li>
-                      <li class="slider__info-item">
-                        <dl class="slider__item-list">
-                          <dt class="slider__item-title">Рукоятки управления</dt>
-                          <dd class="slider__item-text">
-                            <p class="slider__item-text-description">Благодаря рукояти вы можете опускать и поднимать
-                              ткань на нужную
-                              Вам высоту.</p>
-                          </dd>
-                        </dl>
-                      </li>
-                      <li class="slider__info-item">
-                        <dl class="slider__item-list">
-                          <dt class="slider__item-title">Кронштейн крепления</dt>
-                          <dd class="slider__item-text">
-                            <p class="slider__item-text-description">Это крепежный элемент без которого не обойтись при
-                              установке
-                              жалюзи плиссе, изготавливается из металла, пластика и крепится мелкими шурупами к раме
-                              окна
-                              или на проем.</p>
-                          </dd>
-                        </dl>
-                      </li>
-                    </ul>
-                    <div class="product__filter"></div>
-                  </div>
-                </li>
-                <li class="slider__item">
-                  <picture>
-                    <source srcset="img/slider-jalousie-second.webp" type="image/webp">
-                    <img class="slider__image" src="img/slider-jalousie-second.jpg" width="524" height="524"
-                      alt="Схема плессе.">
-                  </picture>
-                  <div class="slider__info">
-                    <h3 class="slider__title">Жалюзи Горизонтальные</h3>
-                    <ul class="slider__info-list">
-                      <li class="slider__info-item">
-                        <dl class="slider__item-list">
-                          <dt class="slider__item-title">Крепление верхнее и нижнее</dt>
-                          <dd class="slider__item-text">
-                            <p class="slider__item-text-description">Это крепежный элемент на котором держится сама
-                              ткань
-                              жалюзи.
-                              Изготавливается из металла и алюминия.</p>
-                          </dd>
-                        </dl>
-                      </li>
-                      <li class="slider__info-item">
-                        <dl class="slider__item-list">
-                          <dt class="slider__item-title">Ламели</dt>
-                          <dd class="slider__item-text">
-                            <p class="slider__item-text-description">Ламели - это собственно и есть сами жалюзи
-                              скрывающие
-                              нас от
-                              посторонних глаз, прямых солнечных лучей. Могут быть любого цвета и фактуры, создают
-                              дизайнерский,
-                              приятный внешний вид окну.</p>
-                          </dd>
-                        </dl>
-                      </li>
-                      <li class="slider__info-item">
-                        <dl class="slider__item-list">
-                          <dt class="slider__item-title">Планка управления</dt>
-                          <dd class="slider__item-text">
-                            <p class="slider__item-text-description">Планка управления состоит из орг.стекла, пластика,
-                              дерева,
-                              металла.
-                              Позволяет управлять ламелями жалюзи по горизонтали.</p>
-                          </dd>
-                        </dl>
-                      </li>
-                      <li class="slider__info-item">
-                        <dl class="slider__item-list">
-                          <dt class="slider__item-title">Нить управления</dt>
-                          <dd class="slider__item-text">
-                            <p class="slider__item-text-description">Может быть как веревочная так и цепочная, позволяет
-                              управлять
-                              горизонтальными жалюзи по вертикали и фиксировать их на нужной высоте.</p>
-                          </dd>
-                        </dl>
-                      </li>
-                    </ul>
-                    <div class="product__filter"></div>
-                  </div>
-                </li>
-              </ul>
-              <a class="product__more" href="#">
-                <span class="product__more-title">Развернуть</span>
-                <svg class="product__more-icon" width="14" height="8" viewBox="0 0 14 8" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <rect y="1" width="1.4142" height="9.89937" transform="rotate(-45 0 1)" fill="#AD2320" />
-                  <rect x="13" width="1.4142" height="9.89937" transform="rotate(45 13 0)" fill="#AD2320" />
-                </svg>
-              </a>
-              <ul class="slider__controls">
-                <button class="slider__controls-prev" type="button" title="Кнопка предыдущий слайд.">
-                  <svg class="slider__controls-icon" width="14" height="25" viewBox="0 0 14 25" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect x="12.25" width="2.47487" height="17.3241" transform="rotate(45 12.25 0)" fill="#C4C4C4" />
-                    <rect x="14" y="22.7502" width="2.47487" height="17.3241" transform="rotate(135 14 22.7502)"
-                      fill="#C4C4C4" />
-                  </svg>
-                </button>
-                <button class="slider__controls-next" type="button" title="Следующий слайд.">
-                  <svg class="slider__controls-icon" width="14" height="25" viewBox="0 0 14 25" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect x="12.25" width="2.47487" height="17.3241" transform="rotate(45 12.25 0)" fill="#C4C4C4" />
-                    <rect x="14" y="22.7502" width="2.47487" height="17.3241" transform="rotate(135 14 22.7502)"
-                      fill="#C4C4C4" />
-                  </svg>
-                </button>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="features">
-        <div class="container">
-          <div class="features__wrappper">
-            <h2 class="features__title">Наши преимущества</h2>
-            <ul class="features__list slider-features">
-              <li class="features__item">
-                <svg class="features__icon" width="195" height="200" viewBox="0 0 195 200" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M189.07 0H5.85938C2.62303 0 0 2.62303 0 5.85938V95.5978C0 127.185 17.1616 156.322 44.7876 171.637L94.6228 199.265C95.5063 199.754 96.4859 200 97.464 200C98.4421 200 99.4217 199.754 100.305 199.265L150.14 171.637C177.766 156.322 194.928 127.185 194.928 95.5978V5.85938C194.93 2.62303 192.305 0 189.07 0L189.07 0Z"
-                    fill="white" />
-                  <path
-                    d="M97.0065 105.562C97.0032 105.562 97 105.562 96.9967 105.562C91.8603 105.562 88.462 110.921 90.6275 115.565C91.777 118.031 94.2778 119.624 96.9984 119.626H97.0015C99.7223 119.624 102.223 118.03 103.372 115.565C105.543 110.911 102.124 105.562 97.0065 105.562ZM99.1242 113.584C98.7411 114.406 97.9073 114.937 97 114.939C96.0926 114.937 95.2589 114.406 94.8757 113.584C94.1493 112.027 95.2979 110.249 97 110.249H97.0032C98.6981 110.249 99.8514 112.025 99.1242 113.584Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M137 66.4165L113.406 55.5833V54H80.5937V55.5833L57 66.4165L82.1365 119.539L82.1384 119.539C84.7584 125.123 90.4345 129 97 129C103.565 129 109.242 125.123 111.862 119.539L111.864 119.539L137 66.4165ZM113.406 76.2493L124.718 81.4143L120.703 89.8987L113.406 86.6053V76.2493ZM108.719 82.1251H85.2812V72.7501H108.719V82.1251ZM80.5937 86.6053L73.2969 89.8987L69.2824 81.4143L80.5937 76.2493V86.6053ZM80.5937 91.7481V105.32L75.3023 94.1366L80.5937 91.7481ZM85.2812 86.8126H108.719V96.1877H85.2812V86.8126ZM113.406 91.7481L118.698 94.1366L113.406 105.32V91.7481ZM130.735 68.6977L126.723 77.1768L113.406 71.0962V60.7413L130.735 68.6977ZM108.719 58.6875V68.0626H85.2812V58.6875H108.719ZM80.5937 60.7413V71.0962L67.2774 77.1768L63.2653 68.6977L80.5937 60.7413ZM97 124.313C90.5383 124.313 85.2812 119.056 85.2812 112.594V100.875H108.719V112.594C108.719 119.056 103.462 124.313 97 124.313Z"
-                    fill="#AD2320" />
-                </svg>
-                <p class="features__text">Более 2000<br> видов продукции</p>
-              </li>
-              <li class="features__item">
-                <svg class="features__icon" width="195" height="200" viewBox="0 0 195 200" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M189.07 0H5.85938C2.62303 0 0 2.62303 0 5.85938V95.5978C0 127.185 17.1616 156.322 44.7876 171.637L94.6228 199.265C95.5063 199.754 96.4859 200 97.464 200C98.4421 200 99.4217 199.754 100.305 199.265L150.14 171.637C177.766 156.322 194.928 127.185 194.928 95.5978V5.85938C194.93 2.62303 192.305 0 189.07 0L189.07 0Z"
-                    fill="white" />
-                  <path
-                    d="M103.334 70.5298H88.3821V76.9507H103.334C105.104 76.9507 106.545 75.5103 106.545 73.7403C106.545 71.9703 105.104 70.5298 103.334 70.5298Z"
-                    fill="white" />
-                  <path
-                    d="M96.2692 44C90.0848 44 85.0535 49.0314 85.0535 55.2159C85.0533 61.4003 90.0847 66.4316 96.2692 66.4316C102.454 66.4316 107.485 61.4003 107.485 55.2159C107.485 49.0314 102.454 44 96.2692 44ZM96.2692 61.4092C92.8542 61.4092 90.0759 58.6309 90.0759 55.2159C90.0757 51.8007 92.854 49.0224 96.2692 49.0224C99.6842 49.0224 102.463 51.8007 102.463 55.2159C102.462 58.6309 99.6842 61.4092 96.2692 61.4092Z"
-                    fill="#AD2320" />
-                  <path d="M106.351 77.8384H86.1888V82.8608H106.351V77.8384Z" fill="#AD2320" />
-                  <path
-                    d="M105.028 69.277H87.5104C87.1169 69.277 86.7221 69.2863 86.3268 69.3044C84.411 65.3911 80.384 62.801 75.9134 62.801H73.4021V73.5219C69.3688 76.197 66.164 79.9739 64.185 84.378H57V105.299H64.1817C65.6739 108.618 67.8777 111.609 70.6245 114.027C73.331 116.409 76.5217 118.195 79.946 119.257V128.541H94.1779V120.4H98.3603V128.541H112.592V119.259C117.39 117.77 121.703 114.86 124.893 110.926C128.038 107.047 129.972 102.302 130.464 97.3499H137V92.3273H130.466C129.201 79.4069 118.276 69.277 105.028 69.277ZM120.992 107.763C118.082 111.351 114.012 113.879 109.533 114.881L107.57 115.32V123.519H103.383V115.378H89.1555V123.519H84.9686V115.318L83.0055 114.879C79.6623 114.131 76.5285 112.532 73.9431 110.257C71.3751 107.996 69.3977 105.114 68.225 101.922L67.6208 100.277H62.0226V89.4001H67.6234L68.228 87.7552C69.8724 83.2814 73.0511 79.4918 77.1786 77.084L78.4242 76.3573V68.3248C80.2496 69.0841 81.6913 70.6491 82.2408 72.6332L82.8189 74.7203L84.9684 74.4553C85.8104 74.3515 86.6657 74.2988 87.5103 74.2988H105.028C116.353 74.2988 125.567 83.5126 125.567 94.838C125.567 99.602 123.985 104.071 120.992 107.763Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M76.0818 89.69C77.6029 89.69 78.836 88.4569 78.836 86.9358C78.836 85.4147 77.6029 84.1816 76.0818 84.1816C74.5607 84.1816 73.3276 85.4147 73.3276 86.9358C73.3276 88.4569 74.5607 89.69 76.0818 89.69Z"
-                    fill="#AD2320" />
-                </svg>
-                <p class="features__text">Выгодные цены<br> продукты и услуги</p>
-              </li>
-              <li class="features__item">
-                <svg class="features__icon" width="195" height="200" viewBox="0 0 195 200" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M189.07 0H5.85938C2.62303 0 0 2.62303 0 5.85938V95.5978C0 127.185 17.1616 156.322 44.7876 171.637L94.6228 199.265C95.5063 199.754 96.4859 200 97.464 200C98.4421 200 99.4217 199.754 100.305 199.265L150.14 171.637C177.766 156.322 194.928 127.185 194.928 95.5978V5.85938C194.93 2.62303 192.305 0 189.07 0L189.07 0Z"
-                    fill="white" />
-                  <path
-                    d="M103.334 70.5298H88.3821V76.9507H103.334C105.104 76.9507 106.545 75.5103 106.545 73.7403C106.545 71.9703 105.104 70.5298 103.334 70.5298Z"
-                    fill="white" />
-                  <path
-                    d="M97 49C74.8789 49 57 66.8731 57 89C57 111.121 74.8731 129 97 129C119.121 129 137 111.127 137 89C137 66.8786 119.127 49 97 49ZM97 124.312C77.5286 124.312 61.6875 108.471 61.6875 89C61.6875 69.5286 77.5286 53.6875 97 53.6875C116.471 53.6875 132.312 69.5286 132.312 89C132.312 108.471 116.471 124.312 97 124.312Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M97 58.375C80.1133 58.375 66.375 72.1133 66.375 89C66.375 105.887 80.1133 119.625 97 119.625C113.887 119.625 127.625 105.887 127.625 89C127.625 72.1133 113.887 58.375 97 58.375ZM116.901 105.615L113.553 102.267L110.238 105.581L113.584 108.927C109.649 112.207 104.731 114.346 99.3438 114.831V110.094H94.6562V114.83C89.2686 114.346 84.3508 112.207 80.4158 108.927L83.7217 105.621L80.4072 102.306L77.0989 105.615C73.8097 101.681 71.6631 96.7625 71.172 91.3719H75.878V86.6844H71.167C71.647 81.2858 73.7869 76.3577 77.0731 72.4158L80.4072 75.75L83.7217 72.4355L80.3852 69.0989C84.3255 65.8039 89.2547 63.6556 94.6562 63.1695V67.9062H99.3438V63.1695C104.745 63.6556 109.675 65.8039 113.615 69.0989L110.238 72.4753L113.553 75.7898L116.927 72.4158C120.213 76.3577 122.353 81.2858 122.833 86.6844H118.066V91.3719H122.828C122.337 96.7625 120.19 101.681 116.901 105.615Z"
-                    fill="#AD2320" />
-                  <path
-                    d="M104.031 89C104.031 85.9445 102.072 83.3394 99.3438 82.3719V72.5938H94.6562V82.3719C92.6619 83.0792 91.0792 84.6619 90.3719 86.6562H80.5938V91.3438H90.3719C91.3394 94.0716 93.9445 96.0312 97 96.0312C98.0842 96.0312 99.1116 95.7842 100.03 95.3442L104.718 100.032L108.032 96.7178L103.344 92.0297C103.784 91.1116 104.031 90.0842 104.031 89ZM97 91.3438C95.7077 91.3438 94.6562 90.2923 94.6562 89C94.6562 87.7077 95.7077 86.6562 97 86.6562C98.2923 86.6562 99.3438 87.7077 99.3438 89C99.3438 90.2923 98.2923 91.3438 97 91.3438Z"
-                    fill="#AD2320" />
-                </svg>
-                <p class="features__text">Изготовление<br> от 48 часов</p>
-              </li>
-              <li class="features__item">
-                <svg class="features__icon" width="195" height="200" viewBox="0 0 195 200" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M189.07 0H5.85938C2.62303 0 0 2.62303 0 5.85938V95.5978C0 127.185 17.1616 156.322 44.7876 171.637L94.6228 199.265C95.5063 199.754 96.4859 200 97.464 200C98.4421 200 99.4217 199.754 100.305 199.265L150.14 171.637C177.766 156.322 194.928 127.185 194.928 95.5978V5.85938C194.93 2.62303 192.305 0 189.07 0L189.07 0Z"
-                    fill="white" />
-                  <path
-                    d="M103.334 70.5298H88.3821V76.9507H103.334C105.104 76.9507 106.545 75.5103 106.545 73.7403C106.545 71.9703 105.104 70.5298 103.334 70.5298Z"
-                    fill="white" />
-                  <path
-                    d="M125.82 108.001L119.365 86.8546L122.841 82.3313C124.954 79.6628 124.55 75.7261 121.934 73.5441L115.201 67.9276C112.991 66.0837 110.188 65.0681 107.31 65.0681H106.537C107.613 63.433 108.241 61.4792 108.241 59.3796C108.241 53.6564 103.585 49 97.8613 49C92.1381 49 87.4817 53.6564 87.4817 59.3796C87.4817 61.4786 88.1097 63.433 89.1852 65.0681H88.4125C85.5341 65.0681 82.7319 66.0837 80.5219 67.927L73.7885 73.5441C71.1725 75.7261 70.7684 79.6635 72.8821 82.3319L75.9216 86.2833L70 108.001H84.3018V121.048C84.3018 125.432 87.8693 129 92.2546 129C94.4403 129 96.4221 128.113 97.8613 126.681C99.2999 128.113 101.282 129 103.468 129C107.853 129 111.42 125.432 111.42 121.048V108.001H125.82ZM119.483 103.31H111.42V97.1958L115.855 91.4237L119.483 103.31ZM92.1729 59.3796C92.1729 56.243 94.7247 53.6912 97.8613 53.6912C100.997 53.6912 103.549 56.243 103.549 59.3796C103.549 62.5144 101.001 65.0651 97.8668 65.0681H97.8552C94.7211 65.0651 92.1729 62.5144 92.1729 59.3796ZM76.7938 77.1464L83.5266 71.5299C84.895 70.3879 86.6302 69.7593 88.4125 69.7593H97.8552H97.8613H97.8674H107.31C109.092 69.7593 110.827 70.3879 112.196 71.5299L118.929 77.1464C119.607 77.7115 119.711 78.7333 119.16 79.4236L111.434 89.4785V76.157H106.743V85.7419L88.9935 85.7523V76.1722H84.3024V89.4846L76.59 79.4572L76.5637 79.4236C76.0126 78.7333 76.1157 77.7115 76.7938 77.1464ZM76.1414 103.31L79.5117 90.9507L84.3018 97.1793V103.31H76.1414ZM103.468 124.309C101.67 124.309 100.207 122.846 100.207 121.048V97.8251H95.5157V121.048C95.5157 122.846 94.0527 124.309 92.2546 124.309C90.4559 124.309 88.9935 122.846 88.9935 121.048V90.4441L106.729 90.4331V121.048C106.729 122.846 105.266 124.309 103.468 124.309Z"
-                    fill="#AD2320" />
-                </svg>
-
-                <p class="features__text">Стаж монтажников<br> от 3 лет</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="stages">
-        <div class="container">
-          <div class="stages__wrapper">
-            <h2 class="stages__title">Этапы работ</h2>
-            <ul class="stages__list">
-              <li class="stages__item">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/icon-stage-first-mobile.svg">
-                  <img class="stages__icon" src="img/icon-stages-first.svg" width="191" height="191"
-                    alt="Иконка этапов работ.">
-                </picture>
-                <div class="stages__info">
-                  <h3 class="stages__text">Заявка</h3>
-                  <p class="stages__info">Вы оставляете заявку на сайте</p>
-                </div>
-              </li>
-              <li class="stages__item">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/icon-stage-second-mobile.svg">
-                  <img class="stages__icon" src="img/icon-stages-second.svg" width="191" height="191"
-                    alt="Иконка этапов работ.">
-                </picture>
-                <div class="stages__info">
-                  <h3 class="stages__text">Замер</h3>
-                  <p class="stages__info">Замерщик приезжает к Вам с каталогами и снимает размеры</p>
-                </div>
-              </li>
-              <li class="stages__item">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/icon-stage-third-mobile.svg">
-                  <img class="stages__icon" src="img/icon-stages-third.svg" width="191" height="191"
-                    alt="Иконка этапов работ.">
-                </picture>
-                <div class="stages__info">
-                  <h3 class="stages__text">Установка</h3>
-                  <p class="stages__info">После изготовления наши мастера надежно монтируют изделия</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="call">
-        <div class="container">
-          <div class="call__wrapper">
-            <h2 class="call__title">Вызов замерщика с образцами бесплатно</h2>
-            <form class="call__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-              <div class="form__agreement-wrapper">
-                <label class="form__phone" for="phone-field-two">
-                  <input class="form__field" type="tel" name="phone" id="phone-field-two" placeholder="Номер телефона">
-                </label>
-                <label class="form__name" for="name-field-two">
-                  <input class="form__field" type="text" name="name" id="name-field-two" placeholder="Ваше имя">
-                </label>
-                <button class="form__button button" type="submit">Отправить</button>
-              </div>
-              <div class="form__agreement-wrapper">
-                <label class="form__agreement" for="agreement-field-two">
-                  <input class="form__agreement-field visually-hidden" type="checkbox" name="agreement"
-                    id="agreement-field-two" checked required>
-                  <span class="form__check">
-                    <svg class="form__check-icon" width="14" height="10" viewBox="0 0 14 10" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <rect y="4.30768" width="1.523" height="7.61498" transform="rotate(-45 0 4.30768)"
-                        fill="#AD2320" />
-                      <rect x="12.9231" width="1.523" height="12.184" transform="rotate(45 12.9231 0)" fill="#AD2320" />
-                    </svg>
-                  </span>
-                </label>
-                <p class="form__agreement-info">Даю согласие на обработку моих данных, в соответствии с <a
-                    class="form__agreement-link" href="#" target="_blank">Пользовательским соглашением</a></p>
-              </div>
-            </form>
-            <picture>
-              <source srcset="img/call-master.webp" type="image/webp">
-              <img class="call__image" src="img/call-master.png" width="403" height="462" alt="Замерщик в спецформе.">
-            </picture>
-          </div>
-        </div>
-      </section>
-
-      <section class="team">
-        <div class="container">
-          <div class="team__wrapper">
-            <h2 class="team__title">Наша команда</h2>
-            <ul class="team__list slider-team">
-              <li class="team__item">
-                <div class="team__image-wrapper">
-                  <img class="team__image" src="https://picsum.photos/512/512?random=1"
-                    alt="Фото менеджера по продажам.">
-                </div>
-                <p class="team__name">Петрушкина Ирина</p>
-                <p class="team__position">Менеджер по продажам</p>
-              </li>
-              <li class="team__item">
-                <div class="team__image-wrapper">
-                  <img class="team__image" src="https://picsum.photos/512/512?random=2"
-                    alt="Фото менеджера по продажам.">
-                </div>
-                <p class="team__name">Попаденко Елена</p>
-                <p class="team__position">Менеджер по продажам</p>
-              </li>
-              <li class="team__item">
-                <div class="team__image-wrapper">
-                  <img class="team__image" src="https://picsum.photos/512/512?random=3"
-                    alt="Фото менеджера по продажам.">
-                </div>
-                <p class="team__name">Черный Михаил</p>
-                <p class="team__position">Старший Технический специалист</p>
-              </li>
-              <li class="team__item">
-                <div class="team__image-wrapper">
-                  <img class="team__image" src="https://picsum.photos/512/512?random=4"
-                    alt="Фото менеджера по продажам.">
-                </div>
-                <p class="team__name">Малышев Николай</p>
-                <p class="team__position">Руководитель</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="reviews">
-        <div class="container">
-          <div class="reviews__wrapper">
-            <h2 class="reviews__title">Отзывы о нас</h2>
-            <ul class="reviews__list">
-              <li class="reviews__item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7KXGZAEWzn0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </li>
-              <li class="reviews__item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7KXGZAEWzn0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </li>
-              <li class="reviews__item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7KXGZAEWzn0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </li>
-            </ul>
-            <a class="reviews__button button" href="reviews.html">Смотреть все отзывы</a>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__wrapper">
-
-          <div class="footer__navigation navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="index.html">Жалюзи</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Калькулятор</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="curtains.html">Рулонные шторы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="reviews.html">Видео отзывы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="shutters.html">Рольставни</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="about.html">О компании</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="gates.html">Ворота</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="curtains.html">Контакты</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="automation.html">Автоматика</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__shedule schedule">
-            <svg class="shedule__icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg" title="Иконка календаря.">
-              <path
-                d="M17.1818 1.63636H12.5455V0.818182C12.5455 0.366327 12.1791 0 11.7273 0C11.2754 0 10.9091 0.366327 10.9091 0.818182V1.63636H7.09091V0.818182C7.09091 0.366327 6.72458 0 6.27273 0C5.82087 0 5.45455 0.366327 5.45455 0.818182V1.63636H0.818182C0.366327 1.63636 0 2.00269 0 2.45455V4.90909H18V2.45455C18 2.00269 17.6337 1.63636 17.1818 1.63636Z"
-                fill="#AB2420" />
-              <path
-                d="M0 17.1818C0 17.6336 0.366327 18 0.818182 18H17.1818C17.6337 18 18 17.6336 18 17.1818V6.54541H0V17.1818ZM5.96695 10.876C6.28642 10.5565 6.80449 10.5565 7.12402 10.876L8.18182 11.9338L10.876 9.23963C11.1955 8.9201 11.7136 8.9201 12.0331 9.23963C12.3526 9.55916 12.3526 10.0771 12.0331 10.3967L8.76038 13.6694C8.60062 13.8291 8.39122 13.909 8.18182 13.909C7.97242 13.909 7.76302 13.8291 7.60331 13.6694L5.96695 12.033C5.64736 11.7135 5.64736 11.1955 5.96695 10.876Z"
-                fill="#AB2420" />
-            </svg>
-            <div class="shedule__wrapper">
-              <p class="schedule-title">График работы:</p>
-              <p class="schedule-info">Ежедневно: с 9-00 до 19-00</p>
-            </div>
-          </div>
-
-          <div class="footer__info">
-            <div class="footer__phone phone">
-              <svg class="phone__icon" width="19" height="18" viewBox="0 0 19 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg" tittle="Иконка телефона.">
-                <path
-                  d="M17.9978 14.702C18.0443 15.3337 17.808 15.9151 17.335 16.3374C16.1298 17.4109 14.5719 18 12.9518 18C11.1845 18 9.52573 17.3141 8.27783 16.0661L1.93353 9.72563C-0.53519 7.25691 -0.655394 3.27672 1.66224 0.66842C2.08461 0.195629 2.66217 -0.0408417 3.2977 0.00578633C3.92945 0.0522631 4.47203 0.370031 4.82084 0.900955L6.79345 3.90453C7.26639 4.62545 7.22763 5.56331 6.69277 6.23382C6.23542 6.81122 6.2819 7.63675 6.80132 8.15602L9.85137 11.2023C10.3706 11.7216 11.2001 11.7682 11.7736 11.3108C12.448 10.776 13.3819 10.7333 14.1068 11.21L17.1104 13.1828C17.6336 13.5276 17.9513 14.0702 17.9978 14.702Z"
-                  fill="#AB2420" />
-              </svg>
-              <a class="phone__link" href="tel:+79624460997">8 962 446 09 97</a>
-            </div>
-            <a class="footer__order button modal__link--recall" href="#">Заказать замер</a>
-          </div>
-
-          <div class="footer__copyright">
-            <p class="footer__copyright-text">Copyright © 2013-2020 Freepik Company S.L. All rights reserved.</p>
-          </div>
-
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
-  <div class="modal modal--popup modal--recall hide">
-    <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-      <h2 class="form__title">Подарки для новых клиентов</h2>
-      <label class="form__phone" for="phone-field-two">
-        <input class="form__field form__phone-field" type="tel" name="phone" id="phone-field-two"
-          placeholder="Номер телефона" required>
-      </label>
-      <label class="form__name" for="name-field-two">
-        <input class="form__field form__name-field" type="text" name="name" id="name-field-two" placeholder="Ваше имя"
-          required>
-      </label>
-      <button class="form__button button" type="submit" title="Кнопка отправить.">Хочу подарок</button>
-      <div class="form__agreement-wrapper">
-        <label class="form__agreement" for="agreement-field-two">
-          <input class="form__agreement-field visually-hidden" type="checkbox" name="agreement" id="agreement-field-two"
-            checked required>
-          <span class="form__check">
-            <svg class="form__check-icon" width="14" height="10" viewBox="0 0 14 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <rect y="4.30768" width="1.523" height="7.61498" transform="rotate(-45 0 4.30768)" fill="#AD2320" />
-              <rect x="12.9231" width="1.523" height="12.184" transform="rotate(45 12.9231 0)" fill="#AD2320" />
-            </svg>
-          </span>
-        </label>
-        <p class="form__agreement-info">Даю согласие на обработку моих данных, в соответствии с <a
-            class="form__agreement-link" href="#" target="_blank">Пользовательским соглашением</a></p>
-      </div>
-    </form>
-    <button class="modal__close button--close modal__close--recall" type="button" title="Кнопка закрыть модальное окно">
-      <svg class="modal__close-icon" width="17" height="17" viewBox="0 0 17 17" title="Иконка закрыть" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <rect y="1.41422" width="2" height="22" transform="rotate(-45 0 1.41422)" fill="#EFEFEF" />
-        <rect x="15.5564" width="2" height="22" transform="rotate(45 15.5564 0)" fill="#EFEFEF" />
-      </svg>
-    </button>
-  </div>
-
-  <div class="modal modal--popup modal--messages hide">
-    <h3 class="modal__title">Получить консультацию</h3>
-    <ul class="modal__list">
-      <li class="modal__item modal__item--telegram">
-        <a class="modal__link" href="#">Написать в Telegram</a>
-      </li>
-      <li class="modal__item modal__item--whatsapp">
-        <a class="modal__link" href="#">Написать в WhatsApp</a>
-      </li>
-      <li class="modal__item modal__item--recall modal__link--recall">
-        <a class="modal__link" href="#">Заказать звонок</a>
-      </li>
-      <li class="modal__item modal__item--call">
-        <a class="modal__link" href="#">Позвонить</a>
-      </li>
-    </ul>
-    <button class="modal__close button--close modal__close--message" type="button"
-      title="Кнопка закрыть модальное окно">
-      <svg class="modal__close-icon" width="17" height="17" viewBox="0 0 17 17" title="Иконка закрыть" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <rect y="1.41422" width="2" height="22" transform="rotate(-45 0 1.41422)" fill="#EFEFEF" />
-        <rect x="15.5564" width="2" height="22" transform="rotate(45 15.5564 0)" fill="#EFEFEF" />
-      </svg>
-    </button>
-  </div>
-
-  <div class="menu hide">
-    <div class="menu__wrapper">
-      <div class="menu__logo-wrapper">
-        <a class="menu__logo logo" href="#">
-          <img class="logo__image" src="img/icon-logo.svg" width="189" height="50" alt="Логотип сайта Прогресс.">
-        </a>
-      </div>
-      <nav class="navigation menu__navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--toggle">
-            <a class="navigation__link navigation__link--toggle" href="#">Каталог услуг
-              <svg class="navigation__icon" width="12" height="8" viewBox="0 0 12 8" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect y="1.41422" width="2" height="8" transform="rotate(-45 0 1.41422)" fill="#AD2320" />
-                <rect x="9.89948" width="2" height="8" transform="rotate(45 9.89948 0)" fill="#AD2320" />
-              </svg>
-            </a>
-            <ul class="navigation__list navigation__list--inner hide">
-              <li class="navigation__item">
-                <a class="navigation__link" href="index.html">Жалюзи</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="curtains.html">Рулонные шторы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="shutters.html">Рольставни</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="gates.html">Ворота</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="automation.html">Автоматика</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Шлагбаумы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="video.html">Видеонаблюдение</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="windows.html">Окна</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="aluminum.html">Алюминевые конструкции</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Калькулятор</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="reviews.html">Видео отзывы</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="about.html">О компании</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="logo">
+      <img class="logo__icon" src="./img/logo-icon.svg" alt="Логотип Видеосервис.">
+      <span class="logo__text">Видеосервис</span>
     </div>
+    <div class="search">
+      <form class="search__form" action="#" method="get">
+        <input class="search__field" type="search" name="search-field" id="search" placeholder="Поиск...">
+        <button class="search__button" type="submit">Найти</button>
+      </form>
+    </div>
+    <div class="authorization">
+      <a class="authorization__link" href="#">Войти</a>
+    </div>
+
   </div>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="slick/slick.min.js"></script>
+</header>
+
+
+  <main class="main">
+
+    <div class="container">
+
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--active">
+          <a class="navigation__link" href="#">Фильмы</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Телеканалы</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="news">
+      <h2 class="news__title">🔥 Новинки</h2>
+      <ul class="news__list">
+        <li class="news__item">
+          <a class="news__link" href="#">
+            <img class="news__image" src="./img/film-one.jpg" alt="">
+            <div class="news__overlay">
+              <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на
+                закате его «золотого века».
+                Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся
+                мире киноиндустрии.</p>
+            </div>
+          </a>
+          <p class="news__intro">Мульт в кино. Выпуск №103. Некогда грустить!</p>
+        </li>
+        <li class="news__item">
+          <a class="news__link" href="#">
+            <img class="news__image" src="./img/film-two.jpg" alt="">
+            <div class="news__overlay">
+              <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на
+                закате его «золотого века».
+                Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся
+                мире киноиндустрии.</p>
+            </div>
+          </a>
+          <p class="news__intro">Новый Бэтмен</p>
+        </li>
+        <li class="news__item">
+          <a class="news__link" href="#">
+            <img class="news__image" src="./img/film-three.jpg" alt="">
+            <div class="news__overlay">
+              <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на
+                закате его «золотого века».
+                Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся
+                мире киноиндустрии.</p>
+            </div>
+          </a>
+          <p class="news__intro">Однажды... в Голливуде</p>
+        </li>
+        <li class="news__item">
+          <a class="news__link" href="#">
+            <img class="news__image" src="./img/film-four.jpg" alt="">
+            <div class="news__overlay">
+              <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на
+                закате его «золотого века».
+                Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся
+                мире киноиндустрии.</p>
+            </div>
+          </a>
+          <p class="news__intro">Стриптизёрши</p>
+        </li>
+      </ul>
+    </section>
+    <section class="genres">
+      <h2 class="genres__title">Жанры</h2>
+      <ul class="genres__list">
+        <li class="genres__item genres__item--comedy">
+          <a class="genres__link" href="#">
+            <span class="genres__icon">😁</span>
+            <p class="genres__name">Комедии</p>
+          </a>
+        </li>
+        <li class="genres__item genres__item--drama">
+          <a class="genres__link" href="#">
+            <span class="genres__icon">😭</span>
+            <p class="genres__name">Драмы</p>
+          </a>
+        </li>
+        <li class="genres__item genres__item--fantastic">
+          <a class="genres__link" href="#">
+            <span class="genres__icon">👽</span>
+            <p class="genres__name">Фантастика</p>
+          </a>
+        </li>
+        <li class="genres__item genres__item--horrors">
+          <a class="genres__link" href="#">
+            <span class="genres__icon">👻</span>
+            <p class="genres__name">Ужасы</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="container container--flex">
+
+    <img class="footer__logo" src="./img/htc-cs-icon.svg" alt="Логотип компании HTC-CS.">
+    <div class="contacts">
+      <address class="contacts__address">
+        426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)
+      </address>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+73412938861"> +7 (3412) 93-88-61,&nbsp;</a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+73412432929">43-29-29</a>
+        </li>
+      </ul>
+      <a class="contacts__company" href="htc-cs.ru" target="_blank">htc-cs.ru</a>
+    </div>
+
+    </div>
+
+  </footer>
+
   <script src="js/script.min.js"></script>
 </body>
 

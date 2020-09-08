@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: 182px;
+  margin-right: 207px;
+}
+
+.logo__icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+}
+
+.logo__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Rubik", "Arial", sans-serif;
+  color: #333333;
+}
