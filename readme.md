@@ -1,4 +1,4 @@
-Название: **Видеосервис** 
+Название: **Видеосервис** [![Build Status](https://travis-ci.com/IOINITID/videoservice.svg?branch=master)](https://travis-ci.com/IOINITID/videoservice)
 
 ------------
 
