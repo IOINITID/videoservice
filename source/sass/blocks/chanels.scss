@@ -1,0 +1,89 @@
+.chanels {
+  margin-top: 36px;
+  margin-bottom: 72px;
+}
+
+.chanels__list {
+  @include list-reset;
+  position: relative;
+  max-height: 696px;
+  margin-right: -16px;
+  padding-right: 8px;
+  overflow-y: scroll;
+}
+
+
+.chanels__list::-webkit-scrollbar {
+  width: 8px;
+  background: #f2f2f2;
+  border-radius: 2px;
+}
+
+.chanels__list::-webkit-scrollbar-thumb {
+  height: 504px;
+  background: #bdbdbd;
+  border: 2px solid #f2f2f2;
+  border-radius: 4px;
+}
+
+.chanels__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 21px 24px 19px 143px;
+  background: #f2f2f2;
+  border-radius: 8px;
+}
+
+.chanels__item:last-child {
+  margin-bottom: 0;
+}
+
+.chanels__logo {
+  margin-right: 143px;
+}
+
+.chanels__info {}
+
+.chanels__title {
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Rubik", "Arial", sans-serif;
+  color: #333333;
+}
+
+.chanels__sublist {
+  @include list-reset;
+}
+
+.chanels__subitem {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.chanels__subitem:first-child {
+  color: #e5261e;
+}
+
+.chanels__subitem:last-child {
+  margin-bottom: 0;
+}
+
+.chanels__time {
+  margin-right: 21px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Rubik", "Arial", sans-serif;
+}
+
+.chanels__broadcast {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Rubik", "Arial", sans-serif;
+}
