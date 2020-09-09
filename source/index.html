@@ -11,301 +11,309 @@
 
 <body>
 
-<header class="header">
+  <header class="header">
 
-  <div class="container container--flex">
+    <div class="container container--flex">
 
-    <div class="logo">
-      <img class="logo__icon" src="./img/logo-icon.svg" alt="Логотип Видеосервис.">
-      <span class="logo__text">Видеосервис</span>
+      <div class="logo">
+        <img class="logo__icon" src="./img/logo-icon.svg" alt="Логотип Видеосервис.">
+        <span class="logo__text">Видеосервис</span>
+      </div>
+      <div class="search">
+        <form class="search__form" action="#" method="get">
+          <input class="search__field" type="search" name="search-field" id="search" placeholder="Поиск...">
+          <button class="search__button" type="submit">Найти</button>
+        </form>
+      </div>
+      <div class="authorization">
+        <a class="authorization__link" href="#">Войти</a>
+      </div>
+
     </div>
-    <div class="search">
-      <form class="search__form" action="#" method="get">
-        <input class="search__field" type="search" name="search-field" id="search" placeholder="Поиск...">
-        <button class="search__button" type="submit">Найти</button>
-      </form>
-    </div>
-    <div class="authorization">
-      <a class="authorization__link" href="#">Войти</a>
-    </div>
 
-  </div>
-
-</header>
+  </header>
 
 
   <main class="main">
 
     <div class="container">
 
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item navigation__item--active">
-          <a class="navigation__link" href="#">Фильмы</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Телеканалы</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="#">Фильмы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Телеканалы</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- <section class="news">
-      <h2 class="news__title">🔥 Новинки</h2>
-      <ul class="news__list">
-        <li class="news__item">
-          <a class="news__link" href="#">
-            <img class="news__image" src="./img/film-one.jpg" alt="">
-            <div class="news__overlay">
-              <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на
-                закате его «золотого века».
-                Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся
-                мире киноиндустрии.</p>
+      <section class="news">
+        <h2 class="news__title">🔥 Новинки</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <img class="news__image" src="./img/film-one.jpg" alt="">
+              <div class="news__overlay">
+                <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году,
+                  на
+                  закате его «золотого века».
+                  Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно
+                  меняющемся
+                  мире киноиндустрии.</p>
+              </div>
+            </a>
+            <p class="news__intro">Мульт в кино. Выпуск №103. Некогда грустить!</p>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <img class="news__image" src="./img/film-two.jpg" alt="">
+              <div class="news__overlay">
+                <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году,
+                  на
+                  закате его «золотого века».
+                  Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно
+                  меняющемся
+                  мире киноиндустрии.</p>
+              </div>
+            </a>
+            <p class="news__intro">Новый Бэтмен</p>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <img class="news__image" src="./img/film-three.jpg" alt="">
+              <div class="news__overlay">
+                <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году,
+                  на
+                  закате его «золотого века».
+                  Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно
+                  меняющемся
+                  мире киноиндустрии.</p>
+              </div>
+            </a>
+            <p class="news__intro">Однажды... в Голливуде</p>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <img class="news__image" src="./img/film-four.jpg" alt="">
+              <div class="news__overlay">
+                <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году,
+                  на
+                  закате его «золотого века».
+                  Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно
+                  меняющемся
+                  мире киноиндустрии.</p>
+              </div>
+            </a>
+            <p class="news__intro">Стриптизёрши</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="genres">
+        <h2 class="genres__title">Жанры</h2>
+        <ul class="genres__list">
+          <li class="genres__item genres__item--comedy">
+            <a class="genres__link" href="#">
+              <span class="genres__icon">😁</span>
+              <p class="genres__name">Комедии</p>
+            </a>
+          </li>
+          <li class="genres__item genres__item--drama">
+            <a class="genres__link" href="#">
+              <span class="genres__icon">😭</span>
+              <p class="genres__name">Драмы</p>
+            </a>
+          </li>
+          <li class="genres__item genres__item--fantastic">
+            <a class="genres__link" href="#">
+              <span class="genres__icon">👽</span>
+              <p class="genres__name">Фантастика</p>
+            </a>
+          </li>
+          <li class="genres__item genres__item--horrors">
+            <a class="genres__link" href="#">
+              <span class="genres__icon">👻</span>
+              <p class="genres__name">Ужасы</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="chanels">
+        <ul class="chanels__list">
+
+          <li class="chanels__item">
+            <img class="chanels__logo" src="./img/first-chanel-icon.svg" alt="">
+            <div class="chanels__info">
+              <h3 class="chanels__title">Первый канал</h3>
+              <ul class="chanels__sublist">
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
+                  <p class="chanels__broadcast">Новости (с субтитрами)</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
+                  <p class="chanels__broadcast">Давай поженимся</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
+                  <p class="chanels__broadcast">Другие новости</p>
+                </li>
+              </ul>
             </div>
-          </a>
-          <p class="news__intro">Мульт в кино. Выпуск №103. Некогда грустить!</p>
-        </li>
-        <li class="news__item">
-          <a class="news__link" href="#">
-            <img class="news__image" src="./img/film-two.jpg" alt="">
-            <div class="news__overlay">
-              <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на
-                закате его «золотого века».
-                Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся
-                мире киноиндустрии.</p>
+          </li>
+
+          <li class="chanels__item">
+            <img class="chanels__logo" src="./img/2x2-icon.svg" alt="">
+            <div class="chanels__info">
+              <h3 class="chanels__title">2x2</h3>
+              <ul class="chanels__sublist">
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
+                  <p class="chanels__broadcast">МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
+                  <p class="chanels__broadcast">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
+                  <p class="chanels__broadcast">БУРДАШЕВ. Сезон 1, 20 серия</p>
+                </li>
+              </ul>
             </div>
-          </a>
-          <p class="news__intro">Новый Бэтмен</p>
-        </li>
-        <li class="news__item">
-          <a class="news__link" href="#">
-            <img class="news__image" src="./img/film-three.jpg" alt="">
-            <div class="news__overlay">
-              <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на
-                закате его «золотого века».
-                Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся
-                мире киноиндустрии.</p>
+          </li>
+
+          <li class="chanels__item">
+            <img class="chanels__logo" src="./img/rbk-icon.svg" alt="">
+            <div class="chanels__info">
+              <h3 class="chanels__title">РБК</h3>
+              <ul class="chanels__sublist">
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
+                  <p class="chanels__broadcast">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
+                  <p class="chanels__broadcast">ДЕНЬ. Главные темы</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
+                  <p class="chanels__broadcast">Главные новости</p>
+                </li>
+              </ul>
             </div>
-          </a>
-          <p class="news__intro">Однажды... в Голливуде</p>
-        </li>
-        <li class="news__item">
-          <a class="news__link" href="#">
-            <img class="news__image" src="./img/film-four.jpg" alt="">
-            <div class="news__overlay">
-              <p class="news__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на
-                закате его «золотого века».
-                Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся
-                мире киноиндустрии.</p>
+          </li>
+
+          <li class="chanels__item">
+            <img class="chanels__logo" src="./img/amedia-icon.svg" alt="">
+            <div class="chanels__info">
+              <h3 class="chanels__title">AMEDIA PREMIUM</h3>
+              <ul class="chanels__sublist">
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
+                  <p class="chanels__broadcast">Клиент всегда мёртв</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
+                  <p class="chanels__broadcast">Голодные игры: Сойка-пересмешница. Часть I</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
+                  <p class="chanels__broadcast">Секс в большом городе</p>
+                </li>
+              </ul>
             </div>
-          </a>
-          <p class="news__intro">Стриптизёрши</p>
-        </li>
-      </ul>
-    </section> -->
+          </li>
 
-    <!-- <section class="genres">
-      <h2 class="genres__title">Жанры</h2>
-      <ul class="genres__list">
-        <li class="genres__item genres__item--comedy">
-          <a class="genres__link" href="#">
-            <span class="genres__icon">😁</span>
-            <p class="genres__name">Комедии</p>
-          </a>
-        </li>
-        <li class="genres__item genres__item--drama">
-          <a class="genres__link" href="#">
-            <span class="genres__icon">😭</span>
-            <p class="genres__name">Драмы</p>
-          </a>
-        </li>
-        <li class="genres__item genres__item--fantastic">
-          <a class="genres__link" href="#">
-            <span class="genres__icon">👽</span>
-            <p class="genres__name">Фантастика</p>
-          </a>
-        </li>
-        <li class="genres__item genres__item--horrors">
-          <a class="genres__link" href="#">
-            <span class="genres__icon">👻</span>
-            <p class="genres__name">Ужасы</p>
-          </a>
-        </li>
-      </ul>
-    </section> -->
+          <li class="chanels__item">
+            <img class="chanels__logo" src="./img/first-chanel-icon.svg" alt="">
+            <div class="chanels__info">
+              <h3 class="chanels__title">Первый канал</h3>
+              <ul class="chanels__sublist">
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
+                  <p class="chanels__broadcast">Новости (с субтитрами)</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
+                  <p class="chanels__broadcast">Давай поженимся</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
+                  <p class="chanels__broadcast">Другие новости</p>
+                </li>
+              </ul>
+            </div>
+          </li>
 
-    <section class="chanels">
-      <ul class="chanels__list">
+          <li class="chanels__item">
+            <img class="chanels__logo" src="./img/2x2-icon.svg" alt="">
+            <div class="chanels__info">
+              <h3 class="chanels__title">2x2</h3>
+              <ul class="chanels__sublist">
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
+                  <p class="chanels__broadcast">МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
+                  <p class="chanels__broadcast">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
+                  <p class="chanels__broadcast">БУРДАШЕВ. Сезон 1, 20 серия</p>
+                </li>
+              </ul>
+            </div>
+          </li>
 
-        <li class="chanels__item">
-          <img class="chanels__logo" src="./img/first-chanel-icon.svg" alt="">
-          <div class="chanels__info">
-            <h3 class="chanels__title">Первый канал</h3>
-          <ul class="chanels__sublist">
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
-              <p class="chanels__broadcast">Новости (с субтитрами)</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
-              <p class="chanels__broadcast">Давай поженимся</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
-              <p class="chanels__broadcast">Другие новости</p>
-            </li>
-          </ul>
-          </div>
-        </li>
+          <li class="chanels__item">
+            <img class="chanels__logo" src="./img/rbk-icon.svg" alt="">
+            <div class="chanels__info">
+              <h3 class="chanels__title">РБК</h3>
+              <ul class="chanels__sublist">
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
+                  <p class="chanels__broadcast">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
+                  <p class="chanels__broadcast">ДЕНЬ. Главные темы</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
+                  <p class="chanels__broadcast">Главные новости</p>
+                </li>
+              </ul>
+            </div>
+          </li>
 
-        <li class="chanels__item">
-          <img class="chanels__logo" src="./img/2x2-icon.svg" alt="">
-          <div class="chanels__info">
-            <h3 class="chanels__title">2x2</h3>
-          <ul class="chanels__sublist">
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
-              <p class="chanels__broadcast">МУЛЬТ ТВ. Сезон 4, 7 серия</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
-              <p class="chanels__broadcast">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
-              <p class="chanels__broadcast">БУРДАШЕВ. Сезон 1, 20 серия</p>
-            </li>
-          </ul>
-          </div>
-        </li>
+          <li class="chanels__item">
+            <img class="chanels__logo" src="./img/amedia-icon.svg" alt="">
+            <div class="chanels__info">
+              <h3 class="chanels__title">AMEDIA PREMIUM</h3>
+              <ul class="chanels__sublist">
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
+                  <p class="chanels__broadcast">Клиент всегда мёртв</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
+                  <p class="chanels__broadcast">Голодные игры: Сойка-пересмешница. Часть I</p>
+                </li>
+                <li class="chanels__subitem">
+                  <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
+                  <p class="chanels__broadcast">Секс в большом городе</p>
+                </li>
+              </ul>
+            </div>
+          </li>
 
-        <li class="chanels__item">
-          <img class="chanels__logo" src="./img/rbk-icon.svg" alt="">
-          <div class="chanels__info">
-            <h3 class="chanels__title">РБК</h3>
-          <ul class="chanels__sublist">
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
-              <p class="chanels__broadcast">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
-              <p class="chanels__broadcast">ДЕНЬ. Главные темы</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
-              <p class="chanels__broadcast">Главные новости</p>
-            </li>
-          </ul>
-          </div>
-        </li>
-
-        <li class="chanels__item">
-          <img class="chanels__logo" src="./img/amedia-icon.svg" alt="">
-          <div class="chanels__info">
-            <h3 class="chanels__title">AMEDIA PREMIUM</h3>
-          <ul class="chanels__sublist">
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
-              <p class="chanels__broadcast">Клиент всегда мёртв</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
-              <p class="chanels__broadcast">Голодные игры: Сойка-пересмешница. Часть I</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
-              <p class="chanels__broadcast">Секс в большом городе</p>
-            </li>
-          </ul>
-          </div>
-        </li>
-
-        <li class="chanels__item">
-          <img class="chanels__logo" src="./img/first-chanel-icon.svg" alt="">
-          <div class="chanels__info">
-            <h3 class="chanels__title">Первый канал</h3>
-          <ul class="chanels__sublist">
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
-              <p class="chanels__broadcast">Новости (с субтитрами)</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
-              <p class="chanels__broadcast">Давай поженимся</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
-              <p class="chanels__broadcast">Другие новости</p>
-            </li>
-          </ul>
-          </div>
-        </li>
-
-        <li class="chanels__item">
-          <img class="chanels__logo" src="./img/2x2-icon.svg" alt="">
-          <div class="chanels__info">
-            <h3 class="chanels__title">2x2</h3>
-          <ul class="chanels__sublist">
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
-              <p class="chanels__broadcast">МУЛЬТ ТВ. Сезон 4, 7 серия</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
-              <p class="chanels__broadcast">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
-              <p class="chanels__broadcast">БУРДАШЕВ. Сезон 1, 20 серия</p>
-            </li>
-          </ul>
-          </div>
-        </li>
-
-        <li class="chanels__item">
-          <img class="chanels__logo" src="./img/rbk-icon.svg" alt="">
-          <div class="chanels__info">
-            <h3 class="chanels__title">РБК</h3>
-          <ul class="chanels__sublist">
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
-              <p class="chanels__broadcast">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
-              <p class="chanels__broadcast">ДЕНЬ. Главные темы</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
-              <p class="chanels__broadcast">Главные новости</p>
-            </li>
-          </ul>
-          </div>
-        </li>
-
-        <li class="chanels__item">
-          <img class="chanels__logo" src="./img/amedia-icon.svg" alt="">
-          <div class="chanels__info">
-            <h3 class="chanels__title">AMEDIA PREMIUM</h3>
-          <ul class="chanels__sublist">
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 13:00">13:00</time>
-              <p class="chanels__broadcast">Клиент всегда мёртв</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09  14:00"> 14:00</time>
-              <p class="chanels__broadcast">Голодные игры: Сойка-пересмешница. Часть I</p>
-            </li>
-            <li class="chanels__subitem">
-              <time class="chanels__time" datetime="2020-09-09 15:00">15:00</time>
-              <p class="chanels__broadcast">Секс в большом городе</p>
-            </li>
-          </ul>
-          </div>
-        </li>
-
-      </ul>
-    </section>
+        </ul>
+      </section>
 
     </div>
 
@@ -315,21 +323,21 @@
 
     <div class="container container--flex">
 
-    <img class="footer__logo" src="./img/htc-cs-icon.svg" alt="Логотип компании HTC-CS.">
-    <div class="contacts">
-      <address class="contacts__address">
-        426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)
-      </address>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+73412938861"> +7 (3412) 93-88-61,&nbsp;</a>
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+73412432929">43-29-29</a>
-        </li>
-      </ul>
-      <a class="contacts__company" href="htc-cs.ru" target="_blank">htc-cs.ru</a>
-    </div>
+      <img class="footer__logo" src="./img/htc-cs-icon.svg" alt="Логотип компании HTC-CS.">
+      <div class="contacts">
+        <address class="contacts__address">
+          426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)
+        </address>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+73412938861"> +7 (3412) 93-88-61,&nbsp;</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+73412432929">43-29-29</a>
+          </li>
+        </ul>
+        <a class="contacts__company" href="htc-cs.ru" target="_blank">htc-cs.ru</a>
+      </div>
 
     </div>
 
