@@ -79,7 +79,7 @@ const webp = () => {
 // JavaScript optimizations
 const scripts = () => {
   return src(['source/js/**/*.js', '!source/js/**/*.min.js'])
-    .pipe(babel({presets: ['@babel/preset-env']}))
+    .pipe(babel({presets: ['@babel/env']}))
     .pipe(terser())
     .pipe(rename({suffix: '.min'}))
     .pipe(dest('build/js'));

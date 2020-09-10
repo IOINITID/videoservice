@@ -11,9 +11,9 @@ const channelsElement = document.querySelector(`.channels`);
  * @param {Element} elements коллекция элементов DOM.
  */
 const clearActiveSection = (elements) => {
-  elements.forEach((item) => {
+  for (const item of elements) {
     item.classList.remove(`navigation__item--active`);
-  });
+  }
 };
 
 /**
