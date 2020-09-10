@@ -60,6 +60,9 @@
   color: $text-default;
   border: none;
   border-bottom: 1px solid $text-default;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
 }
 
 .modal__input::placeholder {
@@ -84,7 +87,7 @@
   display: none;
   width: 10px;
   height: 8px;
-  background-image: url("../../img/checkbox-icon.svg");
+  background-image: url("../img/checkbox-icon.svg");
   transform: translate(-50%, -50%);
 }
 

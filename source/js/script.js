@@ -76,6 +76,7 @@ const loginClickHandler = (evt) => {
 
   overlay.style.display = `block`;
   modal.style.display = `block`;
+  document.body.style.overflow = `hidden`;
 };
 
 /**
@@ -87,6 +88,7 @@ const closeModalHandler = (evt) => {
   overlay.style.display = `none`;
   modal.style.display = `none`;
   modalTitle.textContent = `Вход`;
+  document.body.style.overflow = `auto`;
 };
 
 /**
