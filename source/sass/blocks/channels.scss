@@ -1,10 +1,10 @@
-.chanels {
+.channels {
   display: none;
   margin-top: 36px;
   margin-bottom: 72px;
 }
 
-.chanels__list {
+.channels__list {
   @include list-reset;
   position: relative;
   max-height: 696px;
@@ -14,20 +14,20 @@
 }
 
 
-.chanels__list::-webkit-scrollbar {
+.channels__list::-webkit-scrollbar {
   width: 8px;
   background: #f2f2f2;
   border-radius: 2px;
 }
 
-.chanels__list::-webkit-scrollbar-thumb {
+.channels__list::-webkit-scrollbar-thumb {
   height: 504px;
   background: #bdbdbd;
   border: 2px solid #f2f2f2;
   border-radius: 4px;
 }
 
-.chanels__item {
+.channels__item {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
@@ -36,15 +36,15 @@
   border-radius: 8px;
 }
 
-.chanels__item:last-child {
+.channels__item:last-child {
   margin-bottom: 0;
 }
 
-.chanels__logo {
+.channels__logo {
   margin-right: 143px;
 }
 
-.chanels__title {
+.channels__title {
   margin: 0;
   margin-bottom: 17px;
   font-weight: 500;
@@ -54,24 +54,24 @@
   color: #333333;
 }
 
-.chanels__sublist {
+.channels__sublist {
   @include list-reset;
 }
 
-.chanels__subitem {
+.channels__subitem {
   display: flex;
   margin-bottom: 12px;
 }
 
-.chanels__subitem:first-child {
+.channels__subitem:first-child {
   color: #e5261e;
 }
 
-.chanels__subitem:last-child {
+.channels__subitem:last-child {
   margin-bottom: 0;
 }
 
-.chanels__time {
+.channels__time {
   margin-right: 21px;
   font-weight: 400;
   font-size: 16px;
@@ -79,7 +79,7 @@
   font-family: "Rubik", "Arial", sans-serif;
 }
 
-.chanels__broadcast {
+.channels__broadcast {
   margin: 0;
   font-weight: 400;
   font-size: 16px;

@@ -1,6 +1,5 @@
 .genres {
-  margin-top: 32px;
-  margin-bottom: 72px;
+  margin-bottom: 52px;
 }
 
 .genres__title {
@@ -16,13 +15,14 @@
 .genres__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .genres__item {
   width: 280px;
   height: 208px;
   margin-right: 20px;
-  // background: linear-gradient(127.83deg, rgba(242, 201, 76, 0.8) 8.44%, rgba(242, 154, 74, 0.8) 91.36%);
+  margin-bottom: 20px;
   border-radius: 6px;
   box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.15);
 }
@@ -59,7 +59,7 @@
   background: linear-gradient(127.83deg, rgba(130, 130, 130, 1) 8.44%, rgba(51, 51, 51, 1) 91.36%);
 }
 
-.genres__item:last-child {
+.genres__item:nth-child(4n) {
   margin-right: 0;
 }
 

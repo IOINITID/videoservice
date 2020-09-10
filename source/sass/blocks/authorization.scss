@@ -3,7 +3,7 @@
   margin-left: auto;
 }
 
-.authorization__link {
+.authorization__login {
   width: 113px;
   padding-top: 9px;
   padding-right: 32px;
@@ -17,4 +17,41 @@
   text-decoration: none;
   background-color: #e5261e;
   border-radius: 4px;
+}
+
+.authorization__login:hover {
+  background-color: #cc221b;
+}
+
+.authorization__list {
+  @include list-reset;
+  display: none;
+}
+
+.authorization__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Rubik", "Arial", sans-serif;
+  color: #333333;
+  text-decoration: none;
+}
+
+.authorization__name:hover {
+  text-decoration: underline;
+}
+
+.authorization__logout {
+  margin-left: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Rubik", "Arial", sans-serif;
+  text-align: center;
+  color: #e5261e;
+  text-decoration: none;
+}
+
+.authorization__logout:hover {
+  text-decoration: underline;
 }
