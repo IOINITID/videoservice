@@ -28,7 +28,7 @@
   border-bottom: 2px solid $text-additional;
 }
 
-@media (max-width: $width-tablet) {
+@media (max-width: $width-desktop) {
   .navigation__link {
     font-size: 22px;
   }
