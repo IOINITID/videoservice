@@ -8,8 +8,8 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  font-family: "Rubik", "Arial", sans-serif;
-  color: #333333;
+  font-family: inherit;
+  color: $text-default;
 }
 
 .genres__list {
@@ -87,8 +87,8 @@
   margin: 0;
   font-size: 20px;
   line-height: 24px;
-  font-family: "Rubik", "Arial", sans-serif;
+  font-family: inherit;
   text-align: center;
-  color: #ffffff;
+  color: $text-alternative;
   transform: translate(-50%, -50%);
 }

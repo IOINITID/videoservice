@@ -12,10 +12,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Rubik", "Arial", sans-serif;
-  color: #ffffff;
+  font-family: inherit;
+  color: $text-alternative;
   text-decoration: none;
-  background-color: #e5261e;
+  background-color: $text-additional;
   border-radius: 4px;
 }
 
@@ -32,8 +32,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Rubik", "Arial", sans-serif;
-  color: #333333;
+  font-family: inherit;
+  color: $text-default;
   text-decoration: none;
 }
 
@@ -46,9 +46,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Rubik", "Arial", sans-serif;
+  font-family: inherit;
   text-align: center;
-  color: #e5261e;
+  color: $text-additional;
   text-decoration: none;
 }
 

@@ -1,12 +1,10 @@
-// .contacts {}
-
 .contacts__address {
   margin-bottom: 6px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Rubik", "Arial", sans-serif;
-  color: #333333;
+  font-family: inherit;
+  color: $text-default;
   font-style: normal;
 }
 
@@ -20,8 +18,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Rubik", "Arial", sans-serif;
-  color: #333333;
+  font-family: inherit;
+  color: $text-default;
   text-decoration: none;
 }
 
@@ -33,7 +31,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Rubik", "Arial", sans-serif;
+  font-family: inherit;
   color: #1f4766;
   text-decoration: none;
   font-style: normal;

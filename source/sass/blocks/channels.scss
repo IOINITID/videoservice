@@ -50,8 +50,8 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  font-family: "Rubik", "Arial", sans-serif;
-  color: #333333;
+  font-family: inherit;
+  color: $text-default;
 }
 
 .channels__sublist {
@@ -64,7 +64,7 @@
 }
 
 .channels__subitem:first-child {
-  color: #e5261e;
+  color: $text-additional;
 }
 
 .channels__subitem:last-child {
@@ -76,7 +76,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Rubik", "Arial", sans-serif;
+  font-family: inherit;
 }
 
 .channels__broadcast {
@@ -84,5 +84,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Rubik", "Arial", sans-serif;
+  font-family: inherit;
 }
