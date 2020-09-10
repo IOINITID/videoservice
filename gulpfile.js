@@ -12,6 +12,7 @@ const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const webpicture = require('gulp-webp');
 const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 const svgstore = require('gulp-svgstore');
 const del = require('del');
 const posthtml = require('gulp-posthtml');
@@ -63,7 +64,7 @@ const images = () => {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
+      // imagemin.svgo()
     ]))
     .pipe(dest('build/img'));
 };
@@ -79,14 +80,14 @@ const webp = () => {
 const scripts = () => {
   return src(['source/js/**/*.js', '!source/js/**/*.min.js'])
     .pipe(babel({presets: ['@babel/env']}))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(rename({suffix: '.min'}))
     .pipe(dest('build/js'));
 };
 
 // SVG spites to build directory
 const sprites = () => {
-  return src(['source/img/icon-*.svg'])
+  return src(['source/img/*-icon.svg'])
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename('sprite.svg'))
     .pipe(dest('build/img'));
@@ -95,6 +96,18 @@ const sprites = () => {
 // Reload server
 const refresh = () => {
   browserSync.reload();
+};
+
+// Copy svg4everybody library
+const svg4everybody = () => {
+  return src('node_modules/svg4everybody/dist/svg4everybody.min.js')
+  .pipe(dest('build/js'));
+};
+
+// Copy picturefill library
+const picturefill = () => {
+  return src('node_modules/picturefill/dist/picturefill.min.js')
+  .pipe(dest('build/js'));
 };
 
 // Server live reloading
@@ -106,7 +119,7 @@ const server = () => {
 };
 
 // Build project
-const build = series(clean, parallel(styles, scripts, copy, html, webp, images));
+const build = series(clean, parallel(styles, scripts, svg4everybody, picturefill, copy, html, webp, images, sprites));
 
 // Start server
 const start = series(build, server);
