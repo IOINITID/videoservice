@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 320px) {
+@media (max-width: $width-tablet) {
   .search {
     width: auto;
     margin-bottom: 20px;
@@ -49,6 +49,11 @@
   }
 
   .search__field {
-    width: auto;
+    width: 100%;
+  }
+
+  .search__form label {
+    display: flex;
+    width: 100%;
   }
 }

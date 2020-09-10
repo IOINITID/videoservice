@@ -57,7 +57,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 320px) {
+@media (max-width: $width-tablet) {
   .authorization {
     width: 100%;
   }

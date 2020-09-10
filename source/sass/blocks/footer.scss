@@ -11,7 +11,7 @@
   margin-right: 40px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: $width-tablet) {
   .footer__logo {
     margin: 0 auto;
     margin-bottom: 20px;

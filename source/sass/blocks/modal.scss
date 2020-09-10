@@ -126,7 +126,7 @@
   background-color: #cc221b;
 }
 
-@media (max-width: 320px) {
+@media (max-width: $width-tablet) {
   .modal {
     width: 284px;
   }

@@ -41,7 +41,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 320px) {
+@media (max-width: $width-tablet) {
   .contacts__address {
     margin-bottom: 20px;
   }

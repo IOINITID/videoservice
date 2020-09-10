@@ -87,7 +87,7 @@
   font-family: inherit;
 }
 
-@media (max-width: 320px) {
+@media (max-width: $width-tablet) {
   .channels__item {
     flex-direction: column;
     padding: 20px;

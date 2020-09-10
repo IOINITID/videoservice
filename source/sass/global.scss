@@ -47,7 +47,7 @@ body {
   background-color: rgba($color: #333333, $alpha: 0.6);
 }
 
-@media (max-width: 320px) {
+@media (max-width: $width-tablet) {
   .container {
     width: 100%;
     max-width: 1140px;
