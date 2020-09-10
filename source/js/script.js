@@ -59,6 +59,7 @@ channelsSection.addEventListener(`click`, channelsSectionClickHandler);
 const authorizationLogin = document.querySelector(`.authorization__login`);
 const modal = document.querySelector(`.modal`);
 const modalForm = document.querySelector(`.modal__form`);
+const modalTitle = document.querySelector(`.modal__title`);
 const overlay = document.querySelector(`.overlay`);
 const modalButton = document.querySelector(`.modal__button`);
 const loginInput = document.querySelector(`.modal__label--login .modal__input`);
@@ -85,6 +86,7 @@ const closeModalHandler = (evt) => {
 
   overlay.style.display = `none`;
   modal.style.display = `none`;
+  modalTitle.textContent = `Вход`;
 };
 
 /**
@@ -148,8 +150,20 @@ const onDocumentLoading = (evt) => {
   }
 };
 
+/**
+ * @description обработчик нажатия на имя пользователя.
+ */
+const nameClickHandler = (evt) => {
+  evt.preventDefault();
+
+  loginClickHandler(evt);
+  modalTitle.textContent = `Сменить имя`;
+  loginInput.value = authorizationName.textContent;
+};
+
 authorizationLogin.addEventListener(`click`, loginClickHandler);
 overlay.addEventListener(`click`, closeModalHandler);
 modalForm.addEventListener(`submit`, modalButtonSubmitHandler);
 authorizationLogout.addEventListener(`click`, logoutClickHandler);
 document.addEventListener(`DOMContentLoaded`, onDocumentLoading);
+authorizationName.addEventListener(`click`, nameClickHandler);
