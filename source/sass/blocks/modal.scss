@@ -119,4 +119,9 @@
   background: $text-additional;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal__button:hover {
+  background-color: #cc221b;
 }

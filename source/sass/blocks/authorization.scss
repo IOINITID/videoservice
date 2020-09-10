@@ -26,6 +26,7 @@
 .authorization__list {
   @include list-reset;
   display: none;
+  min-height: 38px;
 }
 
 .authorization__name {
