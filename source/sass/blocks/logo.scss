@@ -18,3 +18,10 @@
   font-family: inherit;
   color: $text-default;
 }
+
+@media (max-width: 320px) {
+  .logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

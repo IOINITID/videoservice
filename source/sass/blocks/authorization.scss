@@ -56,3 +56,20 @@
 .authorization__logout:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 320px) {
+  .authorization {
+    width: 100%;
+  }
+
+  .authorization__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .authorization__login {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

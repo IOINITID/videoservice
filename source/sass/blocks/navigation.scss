@@ -27,3 +27,9 @@
   color: $text-additional;
   border-bottom: 2px solid $text-additional;
 }
+
+@media (max-width: 320px) {
+  .navigation__link {
+    font-size: 22px;
+  }
+}

@@ -40,3 +40,15 @@
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 320px) {
+  .search {
+    width: auto;
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+
+  .search__field {
+    width: auto;
+  }
+}

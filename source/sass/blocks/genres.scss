@@ -92,3 +92,9 @@
   color: $text-alternative;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width: 320px) {
+  .genres__item {
+    margin-right: 0;
+  }
+}

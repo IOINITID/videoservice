@@ -125,3 +125,9 @@
 .modal__button:hover {
   background-color: #cc221b;
 }
+
+@media (max-width: 320px) {
+  .modal {
+    width: 284px;
+  }
+}

@@ -40,3 +40,13 @@
 .contacts__company:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 320px) {
+  .contacts__address {
+    margin-bottom: 20px;
+  }
+
+  .contacts__list {
+    margin-bottom: 20px;
+  }
+}

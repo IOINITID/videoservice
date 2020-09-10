@@ -86,3 +86,29 @@
   line-height: 19px;
   font-family: inherit;
 }
+
+@media (max-width: 320px) {
+  .channels__item {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .channels__logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .channels__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .channels__broadcast,
+  .channels__time {
+    font-size: 14px;
+  }
+
+  .channels__subitem {
+    margin-bottom: 10px;
+  }
+}
