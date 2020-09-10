@@ -110,6 +110,12 @@ const picturefill = () => {
   .pipe(dest('build/js'));
 };
 
+// Copy babel polyfill library
+const polyfill = () => {
+  return src('node_modules/babel-polyfill/dist/polyfill.min.js')
+  .pipe(dest('build/js'));
+};
+
 // Server live reloading
 const server = () => {
   browserSync.init({server: 'build'});
@@ -119,7 +125,7 @@ const server = () => {
 };
 
 // Build project
-const build = series(clean, parallel(styles, scripts, svg4everybody, picturefill, copy, html, webp, images, sprites));
+const build = series(clean, parallel(styles, scripts, svg4everybody, picturefill, polyfill, copy, html, webp, images, sprites));
 
 // Start server
 const start = series(build, server);
